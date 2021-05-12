@@ -1,11 +1,11 @@
 import React from 'react'
 import { Platform, TouchableOpacity, Text, FlatList } from 'react-native'
 import { Icon, Picker, View, Item } from 'native-base'
-import { colors, scale } from '../../theme/variables/commonStyles'
+import { colors, scale } from '../../theme'
 import Modal from 'react-native-modal'
 import { useDispatch, useSelector } from 'react-redux'
 import { datasetSelector } from '../../redux/selectors'
-import { setDatasetToReducer } from '../../redux/actions'
+import { setDatasetToReducerAction } from '../../redux/actions'
 
 const Select = ({
   placeholder,
@@ -27,7 +27,9 @@ const Select = ({
     datasetSelector(state, 'product_count_modal_is_visible')
   )
   let setVisible = (is_visible) =>
-    dispatch(setDatasetToReducer(is_visible, 'product_count_modal_is_visible'))
+    dispatch(
+      setDatasetToReducerAction(is_visible, 'product_count_modal_is_visible')
+    )
 
   let selectedValueLabel = null
   items.some(({ value, label }) => {
@@ -72,7 +74,7 @@ const Select = ({
         <View
           style={{
             flex: 1,
-            backgroundColor: colors.brandSecondary,
+            backgroundColor: colors.secondary(),
             borderRadius: scale(0.4),
             marginVertical: scale(1.5),
           }}

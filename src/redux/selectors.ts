@@ -1,4 +1,6 @@
+import Product from '../models/Product'
 import initialState from './initialState.json'
+
 const getDataset = (state: any, datasetName: string) => {
   let dataset = state[datasetName]
   return dataset
@@ -42,6 +44,6 @@ export const productSelectedSelector = (state: any) => {
   productSelected = datasetSelector(state, 'products', {
     id: selected_product_id,
   })
-
+  productSelected = new Product(productSelected)
   return productSelected
 }

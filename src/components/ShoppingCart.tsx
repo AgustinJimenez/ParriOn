@@ -2,14 +2,14 @@ import React from 'react'
 import { Image, TouchableOpacity, Platform } from 'react-native'
 import ImageShoppingCart from '../assets/images/shopping-cart.png'
 import ImageShoppingCartDot from '../assets/images/shopping-cart-dot.png'
-import { scale } from '../theme/variables/commonStyles'
+import { scale } from '../theme'
 
 const ShoppingCart = ({
   style = {},
   onPress = () => {},
   hasNotifications = true,
 }) => {
-  const width = !!style['width'] ? style['width'] : scale(1)
+  const width = !!style['width'] ? style['width'] : scale(0.9)
 
   return (
     <TouchableOpacity

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import CommonStyles, { colors } from '../../theme/variables/commonStyles'
+import CommonStyles, { colors } from '../../theme'
 
 export default StyleSheet.create({
   labelPadder: {
@@ -14,10 +14,10 @@ export default StyleSheet.create({
     paddingBottom: 15,
   },
   colorPrimary: {
-    color: colors.brandPrimary,
+    color: colors.primary(),
   },
   exitIcon: {
-    color: colors.cardDefaultBg,
+    color: colors.cardDefaultBg(),
     textAlignVertical: 'center',
   },
 })

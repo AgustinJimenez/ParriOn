@@ -1,13 +1,17 @@
 import React from 'react'
-import { createDrawerNavigator } from '@react-navigation/drawer'
 import { createStackNavigator } from '@react-navigation/stack'
-import SideBar from '../../components/SideBar'
-
+import {
+  BottomTabBarOptions,
+  BottomTabBarProps,
+  createBottomTabNavigator,
+} from '@react-navigation/bottom-tabs'
 //SCREENS start
-import AuthLoadingScreen from '../../screens/ParriOn/AuthLoadingScreen'
-import ProductsScreen from '../../screens/ParriOn/ProductsScreen'
-import LoginScreen from '../../screens/ParriOn/LoginScreen'
-import SuccessScreen from '../../screens/ParriOn/SummaryScreen'
+import AuthLoadingScreen from '../../screens/AuthLoadingScreen'
+import HomeScreen from '../../screens/HomeScreen'
+import LoginScreen from '../../screens/LoginScreen'
+import SuccessScreen from '../../screens/SummaryScreen'
+import SummaryScreen from '../../screens/SummaryScreen'
+import ProfileScreen from '../../screens/ProfileScreen'
 /* 
 import HomeScreen from '../../screens/HomeScreen'
 import LoginScreen from '../../screens/LoginScreen'
@@ -15,28 +19,75 @@ import LoginScreen from '../../screens/LoginScreen'
 //SCREENS end
 import { useSelector } from 'react-redux'
 import { datasetSelector } from '../../redux/selectors'
-import SummaryScreen from '../../screens/ParriOn/SummaryScreen'
+import RegisterStepOneScreen from '../../screens/RegisterStepOneScreen'
+import RegisterStepTwoScreen from '../../screens/RegisterStepTwoScreen'
+import EditProfileScreen from '../../screens/EditProfileScreen'
+import TabNav from '../../components/TabNav'
+import Animated, { Easing } from 'react-native-reanimated'
+import CategoriesScreen from '../../screens/CategoriesScreen'
+import {
+  LoginScreenRouteName,
+  HomeScreenRouteName,
+  ProfileScreenRouteName,
+  RegisterStepOneRouteName,
+  RegisterStepTwoRouteName,
+  SummaryScreenRouteName,
+  EditProfileScreenRouteName,
+  CategoriesScreenRouteName,
+  ProductsScreenRouteName,
+} from '../../screens/screensRoutes'
+import ProductsScreen from '../../screens/ProductsScreen'
 
 //const Drawer = createDrawerNavigator()
-const Stack = createStackNavigator()
-const NavigationProvider = (props: any) => {
+const AuthStack = createStackNavigator()
+const AuthStackScreen = () => (
+  <AuthStack.Navigator headerMode="none">
+    <AuthStack.Screen name={LoginScreenRouteName} component={LoginScreen} />
+    <AuthStack.Screen
+      name={RegisterStepOneRouteName}
+      component={RegisterStepOneScreen}
+    />
+    <AuthStack.Screen
+      name={RegisterStepTwoRouteName}
+      component={RegisterStepTwoScreen}
+    />
+  </AuthStack.Navigator>
+)
+
+const HomeStack = createStackNavigator()
+const HomeStackScreens = () => (
+  <HomeStack.Navigator headerMode="none">
+    <HomeStack.Screen name={HomeScreenRouteName} component={HomeScreen} />
+    <HomeStack.Screen name={SummaryScreenRouteName} component={SummaryScreen} />
+    <HomeStack.Screen name={ProfileScreenRouteName} component={ProfileScreen} />
+    <HomeStack.Screen
+      name={EditProfileScreenRouteName}
+      component={EditProfileScreen}
+    />
+    <HomeStack.Screen
+      name={CategoriesScreenRouteName}
+      component={CategoriesScreen}
+    />
+    <HomeStack.Screen
+      name={ProductsScreenRouteName}
+      component={ProductsScreen}
+    />
+  </HomeStack.Navigator>
+)
+
+const Tab = createBottomTabNavigator()
+const NavigationProvider = () => {
   let auth_token = useSelector((state) => datasetSelector(state, 'auth_token'))
-  if (!auth_token)
-    return (
-      <Stack.Navigator initialRouteName="AuthLoading" headerMode="none">
-        <Stack.Screen name="Login" component={LoginScreen} />
-      </Stack.Navigator>
-    )
+  if (!auth_token) return <AuthStackScreen />
 
   return (
-    <Stack.Navigator
-      headerMode="none"
-      /* openByDefault={false} */ initialRouteName="Home" /* drawerContent={(props: any) => <SideBar {...props} />} */
+    <Tab.Navigator
+      tabBar={(props: BottomTabBarProps<BottomTabBarOptions>) => (
+        <TabNav {...props} />
+      )}
     >
-      <Stack.Screen name="Products" component={ProductsScreen} />
-      <Stack.Screen name="Summary" component={SummaryScreen} />
-      {/* <Stack.Screen name='Settings' component={SettingsScreen} /> */}
-    </Stack.Navigator>
+      <Tab.Screen name="Home" component={HomeStackScreens} />
+    </Tab.Navigator>
   )
 }
 

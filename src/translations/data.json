@@ -107,6 +107,10 @@
     "en": "Note",
     "es": "Nota"
   },
+  "next_step": {
+    "en": "Next step",
+    "es": "Siguiente paso"
+  },
   "next": {
     "en": "Next",
     "es": "Siguiente"
@@ -166,6 +170,14 @@
   "cancel": {
     "en": "Cancel",
     "es": "Cancelar"
+  },
+  "confirm": {
+    "en": "Confirm",
+    "es": "Confirmar"
+  },
+  "pick_a_date": {
+    "en": "Pick a date",
+    "es": "Selecciona una fecha"
   },
   "settings": {
     "en": "Settings",
@@ -362,5 +374,97 @@
   "please_wait": {
     "en": "Please wait",
     "es": "Por favor, esperar"
+  },
+  "first_name": {
+    "en": "First Name",
+    "es": "Nombres"
+  },
+  "last_name": {
+    "en": "Last Name",
+    "es": "Apellidos"
+  },
+  "email": {
+    "en": "Email",
+    "es": "Email"
+  },
+  "phone": {
+    "en": "Phone",
+    "es": "Número de Teléfono"
+  },
+  "birthdate": {
+    "en": "Birthdate",
+    "es": "Fecha de Nacimiento"
+  },
+  "principal_address": {
+    "en": "Principal address",
+    "es": "Calle principal"
+  },
+  "secondary_address": {
+    "en": "Secondary address",
+    "es": "Calle secundaria"
+  },
+  "house_number": {
+    "en": "House number",
+    "es": "Numero de casa"
+  },
+  "other_references": {
+    "en": "Other references",
+    "es": "Otras referencias"
+  },
+  "locate_in_map": {
+    "en": "Locate in map",
+    "es": "Ubicar en el mapa"
+  },
+  "locate_your_address_in_the_map": {
+    "en": "Locate your address in the map",
+    "es": "Ubica tu dirección en el mapa"
+  },
+  "move_the_map_to_locate_your_shipping_place": {
+    "en": "Locate your address in the map",
+    "es": "Move el mapa para ubicar tu lugar de envio"
+  },
+  "save": {
+    "en": "Save",
+    "es": "Guardar"
+  },
+  "add_your_address": {
+    "en": "Add your address",
+    "es": "Agrega tu direccion"
+  },
+  "your_profile": {
+    "en": "Your profile",
+    "es": "Tu perfil"
+  },
+  "edit_data": {
+    "en": "Edit Data",
+    "es": "Editar Datos"
+  },
+  "edit_your_profile": {
+    "en": "Edit your profile",
+    "es": "Edita tu perfil"
+  },
+  "search_products": {
+    "en": "Search products",
+    "es": "Buscar productos"
+  },
+  "show_category_list": {
+    "en": "Show category list",
+    "es": "Ver lista de categorías"
+  },
+  "show_brands_list": {
+    "en": "Show brands list",
+    "es": "Ver lista de marcas"
+  },
+  "brands": {
+    "en": "Brands",
+    "es": "Marcas"
+  },
+  "categories": {
+    "en": "Categories",
+    "es": "Categorias"
+  },
+  "show_products": {
+    "en": "show products",
+    "es": "ver productos"
   }
 }

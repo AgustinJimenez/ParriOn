@@ -1,11 +1,11 @@
 import { takeLatest, put } from 'redux-saga/effects'
 import { CLEAR_REDUCER_SAGA } from '../actions/types'
-import { setDatasetToReducer } from '../redux/actions'
+import { setDatasetToReducerAction } from '../redux/actions'
 import datasetInitialState from '../redux/initialState.json'
 function* clearReducers() {
   delete datasetInitialState['login_email']
   delete datasetInitialState['fcm_token']
-  yield put(setDatasetToReducer(datasetInitialState))
+  yield put(setDatasetToReducerAction(datasetInitialState))
 }
 
 export default function* clearReducersSaga() {

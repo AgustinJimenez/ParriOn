@@ -1,12 +1,12 @@
-import { colors } from '../../theme/variables/commonStyles'
+import { colors } from '../../theme'
 
 export const headerStyle = {
-    backgroundColor: colors.brandPrimary,
-    boxShadow: 'none',
-    borderBottomWidth: 0,
-    color: 'white',
+  backgroundColor: colors.primary(),
+  boxShadow: 'none',
+  borderBottomWidth: 0,
+  color: 'white',
 }
 
 export const headerBackTitleStyle = {
-    color: 'white',
+  color: 'white',
 }
