@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     marginBottom: scale(0.4),
   },
   container: {
-    backgroundColor: colors.secondary(),
+    backgroundColor: colors.support(),
     marginHorizontal: scale(0.3),
     borderRadius: scale(0.4),
     paddingVertical: scale(0.4),
@@ -54,10 +54,10 @@ const styles = StyleSheet.create({
     marginTop: -scale(12),
   },
   roadCowContainer: { alignSelf: 'flex-end' },
-  colorSecondary: { color: colors.secondary() },
+  colorSecondary: { color: colors.support() },
   totalContainer: {
     flex: 0.4,
-    backgroundColor: colors.light(0.03),
+    backgroundColor: colors.white(0.03),
     paddingHorizontal: scale(0.3),
     paddingVertical: scale(0.1),
     borderRadius: scale(0.1),

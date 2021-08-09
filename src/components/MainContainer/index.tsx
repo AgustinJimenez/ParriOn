@@ -5,23 +5,23 @@ import {
   View,
   TouchableOpacity,
   Image,
-  Platform,
   Text,
   RefreshControl,
-  RefreshControlProps,
+  Platform,
 } from 'react-native'
 import ImageAtomsBg from '../../assets/images/atoms_bg.png'
 import globalStyles, { colors } from '../../theme'
 import ImageUserDefault from '../../assets/images/UserImageDefault.png'
-import AvatarImage from '../../assets/images/avatar_image.png'
-import { scale } from '../../theme'
-import ShoppingCart from '../ShoppingCart'
-import { useNavigation } from '@react-navigation/core'
 import ImageFlame from '../../assets/images/flame.png'
+import { scale } from '../../theme'
+import ShoppingCart from './ShoppingCart'
+import { useNavigation } from '@react-navigation/native'
 import { ProfileScreenRouteName } from '../../screens/screensRoutes'
 import { Icon } from 'native-base'
 import styles from './styles'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { useSelector } from 'react-redux'
+import { datasetSelector } from '../../redux/selectors'
 
 const BackButton = ({}) => {
   const navigation = useNavigation()
@@ -42,29 +42,33 @@ const TopTitle = ({ value = '' }: any) => {
   return <Text style={styles.title}>{value}</Text>
 }
 
-const TopFlameLogo = () => {
+const TopFlameLogo = ({ topFlameIconStyles }: any = {}) => {
   return (
     <Image
       source={ImageFlame}
       resizeMode="contain"
-      style={styles.topFlameIcon}
+      style={[styles.topFlameIcon, topFlameIconStyles]}
     />
   )
 }
 
 const Avatar = () => {
   const navigation = useNavigation()
+  const user = useSelector((state) => datasetSelector(state, 'user'))
 
   const goToProfile = React.useCallback(() => {
+    console.log('hwere')
     navigation.navigate(ProfileScreenRouteName)
   }, [navigation, ProfileScreenRouteName])
 
   return (
-    <TouchableOpacity onPress={goToProfile} style={[styles.avatarContainer]}>
+    <TouchableOpacity onPress={goToProfile} style={styles.avatarContainer}>
       <Image
         defaultSource={ImageUserDefault}
-        source={{ uri: undefined }}
-        resizeMode="contain"
+        source={
+          !!user.avatar ? { uri: user.avatar || undefined } : ImageUserDefault
+        }
+        resizeMode="cover"
         style={styles.avatar}
       />
     </TouchableOpacity>
@@ -78,23 +82,28 @@ interface MainContainerProps {
   hasTopFlameLogo?: boolean
   hasGoBackButton?: boolean
   title?: string | undefined
-  scrollPaddingBottom?: boolean
   refreshing?: boolean
   onRefresh?: () => void
+  renderBottomView?: Function
+  topFlameIconStyles?: object
+  scrollHeight?: number | string
 }
 
-const MainContainer = ({
-  children,
-  hasAvatar = false,
-  hasShoppingCart = false,
-  hasTopFlameLogo = true,
-  hasGoBackButton = false,
-  title = '',
-  scrollPaddingBottom = false,
-  refreshing = false,
-  onRefresh,
-}: MainContainerProps) => (
-  <View style={{ flex: 1 }}>
+const MainContainer = (props: MainContainerProps) => {
+  const {
+    children,
+    hasAvatar = false,
+    hasShoppingCart = false,
+    hasTopFlameLogo = true,
+    hasGoBackButton = false,
+    title = '',
+    refreshing = false,
+    onRefresh,
+    scrollHeight = '100%',
+    renderBottomView = () => {},
+    topFlameIconStyles = {},
+  } = props
+  return (
     <ImageBackground
       source={ImageAtomsBg}
       style={styles.bgImage}
@@ -102,6 +111,9 @@ const MainContainer = ({
     >
       <SafeAreaView style={styles.container}>
         <KeyboardAwareScrollView
+          enableAutomaticScroll
+          scrollEnabled
+          enableOnAndroid
           refreshControl={
             !!onRefresh && (
               <RefreshControl
@@ -114,18 +126,23 @@ const MainContainer = ({
           }
           contentContainerStyle={[
             globalStyles.scrollContainer,
-            !!scrollPaddingBottom ? { paddingBottom: scale(2) } : {},
+            {
+              height: scrollHeight,
+            },
           ]}
         >
           <TopTitle value={title} />
           {children}
         </KeyboardAwareScrollView>
-        {hasTopFlameLogo && <TopFlameLogo />}
+        {renderBottomView()}
+        {hasTopFlameLogo && (
+          <TopFlameLogo topFlameIconStyles={topFlameIconStyles} />
+        )}
         {hasGoBackButton && <BackButton />}
         {hasAvatar && <Avatar />}
         {hasShoppingCart && <ShoppingCart />}
       </SafeAreaView>
     </ImageBackground>
-  </View>
-)
+  )
+}
 export default MainContainer

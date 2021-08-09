@@ -1,7 +1,7 @@
 import React from 'react'
 import { Platform, TouchableOpacity, Text, FlatList } from 'react-native'
 import { Icon, Picker, View, Item } from 'native-base'
-import { colors, scale } from '../../theme'
+import globalStyles, { colors, scale } from '../../theme'
 import Modal from 'react-native-modal'
 import { useDispatch, useSelector } from 'react-redux'
 import { datasetSelector } from '../../redux/selectors'
@@ -74,31 +74,48 @@ const Select = ({
         <View
           style={{
             flex: 1,
-            backgroundColor: colors.secondary(),
+            backgroundColor: colors.support(),
             borderRadius: scale(0.4),
             marginVertical: scale(1.5),
           }}
         >
-          <TouchableOpacity
-            onPress={() => setVisible(false)}
+          <View
             style={{
-              alignSelf: 'flex-end',
-              padding: scale(0.2),
+              flexDirection: 'row',
             }}
           >
-            <Icon name="cross" type="Entypo" />
-          </TouchableOpacity>
-
-          <Text
-            style={{
-              alignSelf: 'center',
-              fontSize: scale(0.5),
-              fontWeight: '800',
-              paddingBottom: scale(0.3),
-            }}
-          >
-            {placeholder}
-          </Text>
+            <Text
+              style={{
+                flex: 1,
+                alignSelf: 'center',
+                fontSize: scale(0.5),
+                color: 'white',
+                textAlign: 'center',
+                fontWeight: '800',
+                paddingBottom: scale(0.3),
+                paddingTop: scale(0.3),
+                ...globalStyles.textShadowLow,
+              }}
+            >
+              {placeholder}
+            </Text>
+            <TouchableOpacity
+              onPress={() => setVisible(false)}
+              style={{
+                position: 'absolute',
+                right: 0,
+                top: 0,
+                paddingRight: scale(0.2),
+                paddingTop: scale(0.2),
+              }}
+            >
+              <Icon
+                name="circle-with-cross"
+                type="Entypo"
+                style={{ color: 'white', ...globalStyles.textShadowLow }}
+              />
+            </TouchableOpacity>
+          </View>
           <FlatList
             style={{ height: '100%' }}
             data={items}
@@ -117,7 +134,17 @@ const Select = ({
                   paddingVertical: scale(0.5),
                 }}
               >
-                <Text style={{ fontSize: scale(0.4) }}>{item.label}</Text>
+                <Text
+                  style={[
+                    {
+                      fontSize: scale(0.4),
+                      color: 'white',
+                    },
+                    globalStyles.textShadowLow,
+                  ]}
+                >
+                  {item.label}
+                </Text>
               </TouchableOpacity>
             )}
           />

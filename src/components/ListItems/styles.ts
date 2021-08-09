@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   itemContainer: {
     flexDirection: 'row',
-    backgroundColor: colors.secondary(),
+    backgroundColor: colors.support(),
     alignSelf: 'center',
     width: '95%',
     borderRadius: scale(0.3),
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   itemImage: {
     width: scale(3),
     height: scale(2),
-    backgroundColor: colors.light(),
+    backgroundColor: colors.white(),
     margin: scale(0.2),
     padding: scale(0.1),
     borderRadius: scale(0.3),

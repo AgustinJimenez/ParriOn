@@ -9,6 +9,8 @@ import {
   CATEGORIES_SCREEN_SAGA,
   HOME_SCREEN_SAGA,
   PRODUCTS_SCREEN_SAGA,
+  PROFILE_SCREEN_SAGA,
+  UPDATE_PROFILE_PHOTO_SAGA,
 } from './types'
 
 export const updatNetworkStatusAction = (network: any) => ({
@@ -94,6 +96,16 @@ export const categoriesScreenSagaAction = ({ type }: any) => ({
   payload: { type },
 })
 
-export const productsScreenSagaAction = () => ({
+export const productsScreenSagaAction = ({ type }: any) => ({
   type: PRODUCTS_SCREEN_SAGA,
+  type_fetch: type,
+})
+
+export const profileScreenSagaAction = () => ({
+  type: PROFILE_SCREEN_SAGA,
+})
+
+export const updateProfileSagaAction = ({ base64 }: any) => ({
+  type: UPDATE_PROFILE_PHOTO_SAGA,
+  base64,
 })

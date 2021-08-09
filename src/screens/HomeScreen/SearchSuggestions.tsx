@@ -9,12 +9,11 @@ import { CategoriesScreenRouteName } from '../screensRoutes'
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'row',
     marginVertical: scale(0.3),
   },
   suggestion: {
-    backgroundColor: colors.secondary(),
+    backgroundColor: colors.support(),
     borderRadius: scale(0.4),
   },
   suggestionTxt: {
@@ -40,16 +39,27 @@ const SearchSuggestions = () => {
       type: CATEGORIES_TYPES.BRANDS,
     })
   }, [navigation])
+  const goToPromotions = React.useCallback(() => {
+    navigation.navigate(CategoriesScreenRouteName, {
+      type: CATEGORIES_TYPES.PROMOTIONS,
+    })
+  }, [navigation])
   return (
     <View style={styles.container}>
       <TouchableOpacity
         style={[styles.suggestion, styles.mr]}
         onPress={goToCategory}
       >
-        <Text style={styles.suggestionTxt}>{t('show_category_list')}</Text>
+        <Text style={styles.suggestionTxt}>{t('categories')}</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.suggestion} onPress={goToBrands}>
-        <Text style={styles.suggestionTxt}>{t('show_brands_list')}</Text>
+      <TouchableOpacity
+        style={[styles.suggestion, styles.mr]}
+        onPress={goToBrands}
+      >
+        <Text style={styles.suggestionTxt}>{t('brands')}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.suggestion} onPress={goToPromotions}>
+        <Text style={styles.suggestionTxt}>{t('promotions')}</Text>
       </TouchableOpacity>
     </View>
   )

@@ -3,11 +3,12 @@ import { Text, View, TouchableOpacity, Image, StyleSheet } from 'react-native'
 import ImageArrowDown from '../../assets/images/arrow-down.png'
 import { Icon } from 'native-base'
 import { colors, scale } from '../../theme'
-import { productSelectedSelector } from '../../redux/selectors'
-import { useSelector } from 'react-redux'
+import { datasetSelector, productSelectedSelector } from '../../redux/selectors'
+import { useDispatch, useSelector } from 'react-redux'
 import Select from '../utils/Select'
 import { useTranslation } from 'react-i18next'
 import Product from '../../models/Product'
+import { setDatasetToReducerAction } from '../../redux/actions'
 
 const styles = StyleSheet.create({
   container: {
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     marginVertical: scale(0.2),
   },
   plusIconContainer: {
-    backgroundColor: colors.light(0.3),
+    backgroundColor: colors.white(0.3),
     paddingHorizontal: scale(0.4),
     paddingVertical: scale(0.3),
     borderRadius: scale(0.15),
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
   },
   count: { fontWeight: '700', fontSize: scale(0.7) },
   minusIconContainer: {
-    backgroundColor: colors.light(0.3),
+    backgroundColor: colors.white(0.3),
     paddingHorizontal: scale(0.4),
     paddingVertical: scale(0.3),
     borderRadius: scale(0.15),
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
   select: {
     width: scale(4),
     height: scale(),
-    backgroundColor: colors.light(0.3),
+    backgroundColor: colors.white(0.3),
     borderRadius: scale(0.2),
     marginTop: scale(0.3),
     marginBottom: scale(0.3),
@@ -57,34 +58,44 @@ const styles = StyleSheet.create({
 })
 
 const ProductCountSelection = () => {
-  let { t } = useTranslation()
-  let [productCount, setProductCount] = React.useState(0)
-  const updateProductCount = (number: number) => {
-    if (number < 0) number = 0
-    setProductCount(Math.abs(number))
-  }
-
+  const dispatch = useDispatch()
+  const { t } = useTranslation()
+  const selected_product_quantity = useSelector((state) =>
+    datasetSelector(state, 'selected_product_quantity')
+  )
   const selected_product: Product = useSelector((state) =>
     productSelectedSelector(state)
   )
 
-  if (!selected_product.weight)
+  const updateProductCount = React.useCallback(
+    (number: number) => {
+      if (number <= 0) number = 1
+      else if (number > selected_product.critical_stock)
+        number = selected_product.critical_stock
+      dispatch(
+        setDatasetToReducerAction(Math.abs(number), 'selected_product_quantity')
+      )
+    },
+    [setDatasetToReducerAction, selected_product]
+  )
+
+  if (!selected_product.weight_controlled_product)
     return (
       <View style={styles.container}>
         <TouchableOpacity
-          onPress={() => updateProductCount(productCount + 1)}
+          style={styles.minusIconContainer}
+          onPress={() => updateProductCount(selected_product_quantity - 1)}
+        >
+          <Icon type="AntDesign" name="minus" style={styles.minusIcon} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => {}} style={styles.countContainer}>
+          <Text style={styles.count}>{selected_product_quantity}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => updateProductCount(selected_product_quantity + 1)}
           style={styles.plusIconContainer}
         >
           <Icon type="AntDesign" name="plus" style={styles.plusIcon} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => {}} style={styles.countContainer}>
-          <Text style={styles.count}>{productCount}</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.minusIconContainer}
-          onPress={() => updateProductCount(productCount - 1)}
-        >
-          <Icon type="AntDesign" name="minus" style={styles.minusIcon} />
         </TouchableOpacity>
       </View>
     )
@@ -93,25 +104,15 @@ const ProductCountSelection = () => {
     <Select
       style={styles.select}
       onValueChange={(value: any) => {
-        setProductCount(value)
+        updateProductCount(value)
       }}
       placeholder={t('select')}
-      selectedValue={productCount}
-      items={[
-        { label: '1 kgs', value: 1 },
-        { label: '2 kgs', value: 2 },
-        { label: '3 kgs', value: 3 },
-        { label: '4 kgs', value: 4 },
-        { label: '5 kgs', value: 5 },
-        { label: '6 kgs', value: 6 },
-        { label: '7 kgs', value: 7 },
-        { label: '8 kgs', value: 8 },
-        { label: '9 kgs', value: 9 },
-        { label: '10 kgs', value: 10 },
-        { label: '11 kgs', value: 11 },
-        { label: '12 kgs', value: 12 },
-        { label: '13 kgs', value: 13 },
-      ]}
+      selectedValue={selected_product_quantity}
+      items={[...Array(100).keys()]
+        .filter(
+          (value) => value <= selected_product.critical_stock && value > 0
+        )
+        .map((value) => ({ label: `${value} kgs`, value }))}
       iosIcon={
         <View style={styles.selectIconContainer}>
           <Image

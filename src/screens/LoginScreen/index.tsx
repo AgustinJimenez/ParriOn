@@ -82,6 +82,7 @@ const LoginScreen = ({ navigation }: any) => {
               value={email}
               onChangeText={(text) => setEmail(text)}
               onSubmitEditing={() => inputPassword?.current?._root?.focus()}
+              autoCapitalize="none"
             />
           </Item>
 
@@ -111,7 +112,7 @@ const LoginScreen = ({ navigation }: any) => {
             onPress={() => onLogin(email, password)}
           >
             {login_is_loading ? (
-              <ActivityIndicator size="large" />
+              <ActivityIndicator size="large" color="white" />
             ) : (
               <Text
                 style={[

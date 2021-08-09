@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   profileImage: {
     width: scale(2.1),
     height: scale(2.1),
+    borderRadius: scale(2.1) / 2,
     marginTop: scale(0.5),
     marginBottom: scale(0.9),
   },
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
   },
   title: {
     alignSelf: 'center',
-    color: colors.light(),
+    color: colors.white(),
     fontSize: scale(0.8),
     fontWeight: '700',
   },

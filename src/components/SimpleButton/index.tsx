@@ -21,7 +21,11 @@ const SimpleButton = ({
         style,
       ]}
     >
-      {!!loading ? <ActivityIndicator style={loadingStyles} /> : children}
+      {!!loading ? (
+        <ActivityIndicator style={loadingStyles} color="white" />
+      ) : (
+        children
+      )}
     </TouchableOpacity>
   )
 }

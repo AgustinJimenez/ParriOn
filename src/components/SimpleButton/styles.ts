@@ -3,7 +3,7 @@ import { colors, scale } from '../../theme'
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.secondary(),
+    backgroundColor: colors.support(),
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',

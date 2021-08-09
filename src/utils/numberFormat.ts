@@ -3,9 +3,9 @@ const numberFormat = (
   { decimals = 0, thousandSeparator = '.', decimalSeparator = ',' } = {}
 ) => {
   return number
-    .toFixed(decimals)
-    .replace('.', decimalSeparator)
-    .replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1${thousandSeparator}`)
+    ?.toFixed?.(decimals)
+    ?.replace?.('.', decimalSeparator)
+    ?.replace?.(/(\d)(?=(\d{3})+(?!\d))/g, `$1${thousandSeparator}`)
 }
 
 export default numberFormat

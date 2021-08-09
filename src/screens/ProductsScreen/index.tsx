@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { ActivityIndicator, Text, View } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
 import { productsScreenSagaAction } from '../../actions'
 import MainContainer from '../../components/MainContainer'
@@ -8,16 +8,37 @@ import { ProductInterface } from '../../interfaces'
 import { datasetSelector } from '../../redux/selectors'
 import styles from './styles'
 import ProductSelectionPanel from '../../components/ProductSelectionPanel'
+import { CATEGORIES_TYPES } from '../../constants'
 
 const ProductsScreen = ({ route }: any) => {
   const dispatch = useDispatch()
   const { item, type } = route.params
-  const products: ProductInterface[] = useSelector((state) =>
-    datasetSelector(state, 'products', { list_format: true })
+  let products: ProductInterface[] = useSelector((state) =>
+    datasetSelector(state, 'products', { list_type: 'array' })
   )
+  const products_screen_is_loading = useSelector((state) =>
+    datasetSelector(state, 'products_screen_is_loading')
+  )
+  products = products.filter((product) => {
+    let allow = false
+    switch (type) {
+      case CATEGORIES_TYPES.BRANDS:
+        allow = product?.brand_id === item.id
+        break
+
+      case CATEGORIES_TYPES.CATEGORIES:
+        allow = product?.category_id === item.id
+        break
+
+      default:
+        break
+    }
+    return allow
+  })
   const fetchDatas = React.useCallback(() => {
-    dispatch(productsScreenSagaAction())
+    dispatch(productsScreenSagaAction({ type }))
   }, [dispatch, productsScreenSagaAction])
+
   React.useEffect(() => {
     fetchDatas()
   }, [])
@@ -30,20 +51,24 @@ const ProductsScreen = ({ route }: any) => {
       title={item.name}
     >
       <View style={styles.container}>
-        {products.map((product: ProductInterface, key: number) => {
-          return (
-            <ProductCard
-              key={key}
-              id={product?.id}
-              title={product.name}
-              subtitle={product.description}
-              price={product.price}
-              image_url={product['images']?.[0]?.['url']}
-              containerStyle={styles.item}
-              onPress={() => {}}
-            />
-          )
-        })}
+        {(() => {
+          // console.log('here ===> ', { products_screen_is_loading, products })
+          if (!products_screen_is_loading && !products?.length)
+            return <Text style={styles.noDataTxt}>No hay datos</Text>
+          else if (products_screen_is_loading && !products?.length)
+            return <ActivityIndicator style={styles.loader} size="large" />
+          else if (products?.length)
+            return products.map((product: ProductInterface, key: number) => {
+              return (
+                <ProductCard
+                  key={key}
+                  id={product?.id}
+                  containerStyle={styles.item}
+                  onPress={() => {}}
+                />
+              )
+            })
+        })()}
       </View>
       <ProductSelectionPanel />
     </MainContainer>

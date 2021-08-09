@@ -23,7 +23,6 @@ import RegisterStepOneScreen from '../../screens/RegisterStepOneScreen'
 import RegisterStepTwoScreen from '../../screens/RegisterStepTwoScreen'
 import EditProfileScreen from '../../screens/EditProfileScreen'
 import TabNav from '../../components/TabNav'
-import Animated, { Easing } from 'react-native-reanimated'
 import CategoriesScreen from '../../screens/CategoriesScreen'
 import {
   LoginScreenRouteName,
@@ -35,8 +34,12 @@ import {
   EditProfileScreenRouteName,
   CategoriesScreenRouteName,
   ProductsScreenRouteName,
+  ShoppingCartScreenRouteName,
+  PayScreenRouteName,
 } from '../../screens/screensRoutes'
 import ProductsScreen from '../../screens/ProductsScreen'
+import ShoppingCartScreen from '../../screens/ShoppingCartScreen'
+import PayScreen from '../../screens/PayScreen'
 
 //const Drawer = createDrawerNavigator()
 const AuthStack = createStackNavigator()
@@ -72,6 +75,11 @@ const HomeStackScreens = () => (
       name={ProductsScreenRouteName}
       component={ProductsScreen}
     />
+    <HomeStack.Screen
+      name={ShoppingCartScreenRouteName}
+      component={ShoppingCartScreen}
+    />
+    <HomeStack.Screen name={PayScreenRouteName} component={PayScreen} />
   </HomeStack.Navigator>
 )
 

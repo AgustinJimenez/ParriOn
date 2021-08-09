@@ -1,0 +1,237 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.app"
+4    android:versionCode="4194305"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:4:3-66
+12-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:4:20-63
+13
+14    <permission
+15        android:name="com.app.permission.C2D_MESSAGE"
+16        android:protectionLevel="signature" />
+17
+18    <uses-permission android:name="com.app.permission.C2D_MESSAGE" />
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:7:3-64
+19-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:7:20-61
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:8:3-78
+20-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:8:20-76
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:9:3-77
+21-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:9:20-74
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:10:3-64
+22-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:10:20-62
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:11:3-63
+23-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:11:20-60
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:12:3-78
+24-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:12:20-75
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:13:3-79
+25-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:13:20-76
+26    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+26-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:14:3-68
+26-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:14:20-66
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->[:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+27-->[:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+28    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+28-->[:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
+28-->[:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-73
+29
+30    <uses-feature
+30-->[:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+31        android:name="android.hardware.camera"
+31-->[:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+32        android:required="false" />
+32-->[:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+33    <uses-feature
+33-->[:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+34        android:name="android.hardware.camera.autofocus"
+34-->[:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+35        android:required="false" />
+35-->[:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+36
+37    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+37-->[:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
+37-->[:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
+38    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+39
+40    <uses-feature
+40-->[com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:26:5-28:35
+41        android:glEsVersion="0x00020000"
+41-->[com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:27:9-41
+42        android:required="true" />
+42-->[com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:28:9-32
+43
+44    <application
+44-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:3-58:17
+45        android:name="com.app.MainApplication"
+45-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:16-47
+46        android:allowBackup="false"
+46-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:162-189
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
+48        android:debuggable="true"
+49        android:icon="@mipmap/ic_launcher"
+49-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:81-115
+50        android:label="@string/app_name"
+50-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:48-80
+51        android:roundIcon="@mipmap/ic_launcher_round"
+51-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:116-161
+52        android:theme="@style/AppTheme"
+52-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:190-221
+53        android:usesCleartextTraffic="true" >
+53-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:7:18-53
+54        <meta-data
+54-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:17:5-119
+55            android:name="com.google.android.geo.API_KEY"
+55-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:17:16-61
+56            android:value="AIzaSyDLH5tuMlnufYefacwrXrgQUnGZSASx13Q" />
+56-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:17:62-117
+57
+58        <activity
+58-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:5-23:16
+59            android:name="com.app.MainActivity"
+59-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:15-43
+60            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+60-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:77-147
+61            android:label="@string/app_name"
+61-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:44-76
+62            android:windowSoftInputMode="adjustPan" >
+62-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:148-187
+63            <intent-filter>
+63-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:19:7-22:23
+64                <action android:name="android.intent.action.MAIN" />
+64-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:20:9-60
+64-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:20:17-58
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:21:9-68
+66-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:21:19-66
+67            </intent-filter>
+68        </activity>
+69        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- </ Only if you're using GCM or localNotificationSchedule() > -->
+69-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:24:5-81
+69-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:24:15-79
+70        <meta-data
+70-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:27:5-28:61
+71            android:name="com.dieam.reactnativepushnotification.notification_channel_name"
+71-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:27:17-95
+72            android:value="YOUR NOTIFICATION CHANNEL NAME" />
+72-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:28:13-59
+73        <meta-data
+73-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:29:5-30:72
+74            android:name="com.dieam.reactnativepushnotification.notification_channel_description"
+74-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:29:17-102
+75            android:value="YOUR NOTIFICATION CHANNEL DESCRIPTION" />
+75-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:30:17-70
+76        <meta-data
+76-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:31:5-32:58
+77            android:name="com.dieam.reactnativepushnotification.notification_color"
+77-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:31:17-88
+78            android:resource="@android:color/white" />
+78-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:32:17-56
+79
+80        <receiver
+80-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:33:5-41:16
+81            android:name="com.google.android.gms.gcm.GcmReceiver"
+81-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:34:9-62
+82            android:exported="true"
+82-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:35:9-32
+83            android:permission="com.google.android.c2dm.permission.SEND" >
+83-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:36:9-69
+84            <intent-filter>
+84-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:37:9-40:25
+85                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+85-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:38:13-77
+85-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:38:21-74
+86
+87                <category android:name="com.app" />
+88            </intent-filter>
+89        </receiver>
+90        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+90-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:42:5-106
+90-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:42:15-103
+91        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+91-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:43:5-47:16
+91-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:43:15-111
+92            <intent-filter>
+92-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:44:9-46:25
+93                <action android:name="android.intent.action.BOOT_COMPLETED" />
+93-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:45:13-75
+93-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:45:21-72
+94            </intent-filter>
+95        </receiver>
+96
+97        <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService" />
+97-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:48:5-114
+97-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:48:14-112
+98        <service
+98-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:49:5-55:15
+99            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm"
+99-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:50:9-106
+100            android:exported="false" >
+100-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:51:9-33
+101            <intent-filter>
+101-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:52:9-54:25
+102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+102-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:38:13-77
+102-->/Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:38:21-74
+103            </intent-filter>
+104        </service>
+105
+106        <provider
+106-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+107            android:name="com.imagepicker.ImagePickerProvider"
+107-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+108            android:authorities="com.app.imagepickerprovider"
+108-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
+109            android:exported="false"
+109-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+110            android:grantUriPermissions="true" >
+110-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+111            <meta-data
+111-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+112                android:name="android.support.FILE_PROVIDER_PATHS"
+112-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+113                android:resource="@xml/imagepicker_provider_paths" />
+113-->[:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+114        </provider> <!-- Needs to be explicitly declared on P+ -->
+115        <uses-library
+115-->[com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+116            android:name="org.apache.http.legacy"
+116-->[com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+117            android:required="false" />
+117-->[com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+118
+119        <activity
+119-->[com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:23:9-26:75
+120            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+120-->[com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:24:13-79
+121            android:exported="false"
+121-->[com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:25:13-37
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+122-->[com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:26:13-72
+123
+124        <meta-data
+124-->[com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
+125            android:name="com.google.android.gms.version"
+125-->[com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
+126            android:value="@integer/google_play_services_version" />
+126-->[com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
+127    </application>
+128
+129</manifest>

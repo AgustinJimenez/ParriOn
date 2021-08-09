@@ -435,6 +435,10 @@
     "en": "Your profile",
     "es": "Tu perfil"
   },
+  "account": {
+    "en": "Account",
+    "es": "Cuenta"
+  },
   "edit_data": {
     "en": "Edit Data",
     "es": "Editar Datos"
@@ -466,5 +470,13 @@
   "show_products": {
     "en": "show products",
     "es": "ver productos"
+  },
+  "your_cart": {
+    "en": "your cart",
+    "es": "tu carrito"
+  },
+  "promotions": {
+    "en": "Promotions",
+    "es": "Promociones"
   }
 }

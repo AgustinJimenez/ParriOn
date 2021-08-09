@@ -1,21 +1,20 @@
 import { Platform, StyleSheet } from 'react-native'
 import { Dimensions } from 'react-native'
-import { color } from 'react-native-reanimated'
 
 const { width } = Dimensions.get('window')
 
 export const scale = (number = 1) => (number / 10) * width
 
 export const colors = {
+  dark: (o = 1) => `rgba(29, 29, 27, ${o})`,
+  support: (o = 1) => `rgba(249,178,51,${o})`,
+  gray: (o = 1) => `rgba(128,127,127,${o})`,
+  white: (o = 1) => `rgba(255,255,255,${o})`,
+  midRed: (o = 1) => `rgba(195,80,46,${o})`,
   primary: (o = 1) => `rgba(29,29,27,${o})`,
-  secondary: (o = 1) => `rgba(249,178,51,${o})`,
   danger: (o = 1) => `rgba(217,83,79,${o})`,
   warning: (o = 1) => `rgba(240,173,78,${o})`,
   cardDefaultBg: (o = 1) => `rgba(247,247,247,${o})`,
-  light: (o = 1) => `rgba(255,255,255,${o})`,
-  gray: (o = 1) => `rgba(120,120,120,${o})`,
-  brandThird: (o = 1) => `rgba(195,80,46,${o})`,
-  dark: (o = 1) => `rgba(29, 29, 27, ${o})`,
   black: (o = 1) => `rgba(0, 0, 0, ${o})`,
 }
 
@@ -49,6 +48,11 @@ export const globalStyles = StyleSheet.create({
       },
     }),
   },
+  textShadowLow: {
+    textShadowColor: 'black',
+    textShadowOffset: { width: -0.5, height: 0.5 },
+    textShadowRadius: 1,
+  },
   padVertical5: {
     paddingVertical: 5,
   },
@@ -76,16 +80,16 @@ export const globalStyles = StyleSheet.create({
   inputArea: {
     height: scale(4),
     textAlignVertical: 'top',
-    color: colors.light(),
+    color: colors.white(),
   },
   inputContainer: {
     marginTop: scale(0.2),
     borderRadius: scale(0.2),
     flexDirection: 'row',
   },
-  secondaryBorder: { borderColor: colors.secondary() },
+  secondaryBorder: { borderColor: colors.support() },
   scrollContainer: {
-    flexGrow: 1,
+    // flexGrow: 1,
   },
   buttonTxt: {
     fontWeight: '500',

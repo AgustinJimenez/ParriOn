@@ -7,10 +7,11 @@ const styles = StyleSheet.create({
   },
   locateInMapModal: {
     margin: 0,
+    height: '100%',
   },
   locateInMapModalContent: {
-    backgroundColor: colors.secondary(),
-    height: '80%',
+    backgroundColor: colors.support(),
+    height: '90%',
     position: 'absolute',
     bottom: 0,
     right: 0,
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
   },
   locateInMapTxt: {
     textAlign: 'center',
-    color: colors.secondary(),
+    color: colors.support(),
     fontWeight: '600',
     alignSelf: 'center',
     paddingVertical: scale(0.4),
@@ -45,12 +46,13 @@ const styles = StyleSheet.create({
     height: '60%',
     borderRadius: scale(0.4),
     marginVertical: scale(0.3),
+    width: '100%',
   },
   saveBtn: {
     width: '100%',
   },
   saveBtnTxt: {
-    color: colors.secondary(),
+    color: colors.support(),
     fontWeight: '600',
     fontSize: scale(0.5),
   },
@@ -63,10 +65,19 @@ const styles = StyleSheet.create({
     fontSize: scale(0.45),
   },
   locateInMapCheck: {
-    color: colors.secondary(),
+    color: colors.support(),
     position: 'absolute',
     right: '15%',
     alignSelf: 'center',
+  },
+  locateInMapExitBtnContainer: {
+    position: 'absolute',
+    right: scale(0.2),
+    top: scale(2.7),
+  },
+  locateInMapExitBtn: {
+    color: 'white',
+    fontSize: scale(0.8),
   },
 })
 export default styles

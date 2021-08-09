@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, TouchableOpacity, Text, StyleSheet } from 'react-native'
+import { View, Image, TouchableOpacity, Text } from 'react-native'
 import ImageHome from '../../assets/images/home.png'
 import ImageMenu from '../../assets/images/menu.png'
 import ImageConfig from '../../assets/images/config.png'
@@ -7,13 +7,16 @@ import {
   BottomTabBarOptions,
   BottomTabBarProps,
 } from '@react-navigation/bottom-tabs'
-import { colors, scale } from '../../theme'
 import { useTranslation } from 'react-i18next'
 import capitalize from '../../utils/capitalize'
-import { useRoute } from '@react-navigation/native'
 import { CommonActions } from '@react-navigation/native'
-import { HomeScreenRouteName } from '../../screens/screensRoutes'
+import {
+  CategoriesScreenRouteName,
+  HomeScreenRouteName,
+  ProfileScreenRouteName,
+} from '../../screens/screensRoutes'
 import styles from './styles'
+import { CATEGORIES_TYPES } from '../../constants'
 
 const TabNav = ({
   navigation,
@@ -44,13 +47,38 @@ const TabNav = ({
         },
         {
           image: ImageMenu,
-          text: capitalize(t('products')),
-          onPress: () => {},
+          text: capitalize(t('categories')),
+          onPress: () => {
+            navigation.dispatch(
+              CommonActions.reset({
+                index: 1,
+                routes: [
+                  { name: HomeScreenRouteName },
+                  {
+                    name: CategoriesScreenRouteName,
+                    params: {
+                      type: CATEGORIES_TYPES.CATEGORIES,
+                    },
+                  },
+                ],
+              })
+            )
+          },
         },
         {
           image: ImageConfig,
-          text: capitalize(t('config')),
-          onPress: () => {},
+          text: capitalize(t('account')),
+          onPress: () => {
+            navigation.dispatch(
+              CommonActions.reset({
+                index: 1,
+                routes: [
+                  { name: HomeScreenRouteName },
+                  { name: ProfileScreenRouteName },
+                ],
+              })
+            )
+          },
         },
       ].map(({ image, text, onPress, disabled }, key) => (
         <TouchableOpacity

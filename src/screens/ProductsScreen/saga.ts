@@ -2,26 +2,28 @@ import { call, put } from 'redux-saga/effects'
 import { takeLatest } from 'redux-saga/effects'
 import showToast from '../../utils/showToast'
 import { productsApiRoute } from '../../api/routes'
-import { setDatasetToReducerAction } from '../../redux/actions'
+import {
+  setDatasetListToReducer,
+  setDatasetToReducerAction,
+} from '../../redux/actions'
 import request from '../../sagas/request'
 import { PRODUCTS_SCREEN_SAGA } from '../../actions/types'
 
-function* productsScreen() {
+function* productsScreen({ type_fetch }) {
+  // console.log('productsScreenSaga ===> ', { type_fetch })
   yield put(setDatasetToReducerAction(true, 'products_screen_is_loading'))
   var { data, error, message } = yield call(request, {
     url: productsApiRoute,
-    debug: true,
+    // debug: true,
   })
   yield put(setDatasetToReducerAction(false, 'products_screen_is_loading'))
-
   if (error) {
     yield showToast(!!message ? message : 'Ocurrio un error inesperado', {
       type: 'danger',
     })
     return
   }
-
-  //   yield put(setDatasetListToObjectReducerAction(data.products, 'products'))
+  yield put(setDatasetListToReducer(data.products, 'products'))
 }
 
 export function* productsScreenSaga() {

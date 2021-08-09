@@ -23,19 +23,25 @@ const styles = StyleSheet.create({
   },
   alreadyRegisteredTxtOne: {
     fontWeight: '400',
-    color: colors.secondary(),
+    color: colors.support(),
+  },
+  alreadyRegisteredTxtTwoContainer: {
+    borderBottomColor: colors.support(),
+    borderBottomWidth: 1.5,
   },
   alreadyRegisteredTxtTwo: {
     fontWeight: '700',
-    color: colors.secondary(),
-    borderBottomColor: colors.secondary(),
-    borderBottomWidth: 2,
+    color: colors.support(),
   },
   bottomItems: {
     position: 'absolute',
-    bottom: 0,
+    bottom: scale(0.8),
     right: 0,
     left: 0,
+  },
+  dateInputContainer: {
+    flex: 1,
+    height: scale(1.25),
   },
 })
 export default styles

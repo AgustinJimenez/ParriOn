@@ -8,20 +8,13 @@ import { colors, scale } from '../../theme'
 import numberDotSeparator from '../../utils/numberDotSeparator'
 import ImageFlame from '../../assets/images/flame.png'
 import styles from './styles'
+import Product from '../../models/Product'
 
-const ProductCard = ({
-  id = 0,
-  title = '',
-  subtitle = '',
-  price = 0,
-  image_url = '',
-  onPress = () => {},
-  containerStyle = {},
-}) => {
+const ProductCard = ({ id = 0, onPress = () => {}, containerStyle = {} }) => {
   const dispatch = useDispatch()
   const navigation = useNavigation()
-  const selected_product_id: number | null = useSelector((state) =>
-    datasetSelector(state, 'selected_product_id')
+  const product = new Product(
+    useSelector((state) => datasetSelector(state, 'products', { id }))
   )
 
   const selectProduct = React.useCallback(
@@ -46,7 +39,7 @@ const ProductCard = ({
     return unsubscribe
   }, [navigation, selectProduct])
 
-  // console.log('ProductCard ===> ', { selected_product_id })
+  // console.log('ProductCard ===> ', { product, image_url: product.image_url })
 
   return (
     <TouchableOpacity
@@ -54,14 +47,19 @@ const ProductCard = ({
       style={[styles.container, containerStyle]}
     >
       <Image
-        source={{ uri: image_url || undefined }}
+        source={{
+          uri: product?.image_url,
+        }}
         defaultSource={ImageFlame}
-        resizeMode={!!image_url ? 'cover' : 'contain'}
+        resizeMode={!!product?.image_url ? 'cover' : 'contain'}
         style={styles.image}
       />
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
-      <Text style={styles.price}>{numberDotSeparator(price)} el Kg</Text>
+      <Text style={styles.title}>{product.name}</Text>
+      <Text style={styles.subtitle}>{product.description}</Text>
+      <Text style={styles.price}>
+        {numberDotSeparator(product.price)}{' '}
+        {product.weight_controlled_product ? 'el kg' : 'la unidad'}
+      </Text>
       <View style={styles.addCart}>
         <Text style={styles.addCartText}>Agregar al carrito</Text>
       </View>

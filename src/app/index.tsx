@@ -15,6 +15,10 @@ import { navigationRef } from './NavigationProvider/service'
 //import { disableYellowBox, ignoreWarnings } from '../../env.json'
 import GlobalFont from 'react-native-global-font'
 import StyleProvider from './StyleProvider'
+import dayjs from 'dayjs'
+import 'dayjs/locale/es'
+dayjs.locale('es')
+
 console.disableYellowBox = true
 
 const App = () => {

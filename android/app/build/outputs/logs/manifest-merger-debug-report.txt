@@ -1,0 +1,552 @@
+-- Merging decision tree log ---
+permission#com.app.permission.C2D_MESSAGE
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:5:3-108
+	android:name
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+uses-permission#com.app.permission.C2D_MESSAGE
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:6:3-77
+	android:name
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+category#com.app
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:39:13-57
+	android:name
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+MERGED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/be63524c73206aa53456cdaa0c8afd03/transformed/hermes-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-community_async-storage] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-community_geolocation] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_masked-view] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
+MERGED from [:react-native-fs] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-gesture-handler] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-safe-area-context] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-search-bar] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-search-bar/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-5:12
+MERGED from [:react-native-svg] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f022685e28863d119bcf0638943949e/transformed/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d2c68ce6ed18f5edfa1bccd01da9e58d/transformed/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6bd72b6f0d0ca4e2cfbde8f8b5a6fe43/transformed/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e3975213c4d25d9e8600a36cc1f9a9/transformed/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/aca75c18f0a93f8fbc8d6969902555fc/transformed/play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ddd2fc49cd9b358f623ff8f93d12b45b/transformed/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/70d9a6c790087fc29ce09ef29b1b87f1/transformed/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e8a231c1209e59be117f9b85fa19166b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7b7d99dbd3a7005e03413609c6cd43ba/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7b933633758f000a0cb77c1fb6ce3f81/transformed/swiperefreshlayout-1.1.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4728fc62f5f9566fc355ac6fab0632d0/transformed/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-image-resizer] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-resizer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8367d3273d16951342d42142cf19aced/transformed/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1f6779c9ede0bd27abb6a92b6478275e/transformed/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f226d81067ff9f9dbff97376825b9636/transformed/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8def76295f798252d7e00af406e3b9e3/transformed/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4b31d7271ae7cbcfa11039e85d124100/transformed/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/39671204805580e0ba2ccbf60c384be8/transformed/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/11e48666792bb0f07bf4cd6a50c87fb8/transformed/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ae70438ffce1c45c477b5bca46d7348f/transformed/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3dea943cb4ce7b454021db1621a48580/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/12414dee4acfe9e0c8d119e431e0473e/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d713e3d977d9c30c27724fbf559ac183/transformed/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e70758084756de1db6e317030f30ee72/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ee6bade21b8f121e7cb923f9c6f86716/transformed/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/186f927ac74cd134a12c57da9106c70f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/769aa046b1baf995fcc9ed8f37d81fba/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f145e21668df94eb5ec82a4a4506526f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/67f09d2917b193324d3f9cb7378129cd/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/55665595100588848af863b9777f59ab/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e857472a32423b1a6ebf681e38c56eff/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/40cb2546c4ad93b3a1cbd1af25f477fe/transformed/activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/130c3d9a640672c70eb21ab842f2d6c7/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4ec6db95f51cc10e4ea4b1a37f620aa/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/302bea21af018d54cd28aa0348dc01b7/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7672281ba7401ad987b495f8a9774ae7/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/cbb6e196b2363e3197b6479fed6e485c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d7ffd34e61f3accce83d49ad9a3d5849/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b0d17be3dd2255dc73a0ffc555937fa1/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ade9dd57f502ff5a44c38473454522f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8e15674e5d893e77025a61b692e2afcc/transformed/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/556e678c2e0f4d392b36d0573f660009/transformed/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4ef49bf693d0e4e7ec76185f77ca8fc/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8b91f012fb40d1e4075e1c9191a6c94e/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/2c9cc9b9cda033541d2b43b25a119778/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f1be503d16827dbf8dbb96e324a2666/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4170a5c1d8503813ca258e2ea5da8f1/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/33ab72d758fdaf84d28f267e118b49a9/transformed/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1396daf837bf7753040a793c5ec435fd/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6c132967cff664c364ce4dfb233d71d8/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/95050ef01d6b438008c62465eb38bf39/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f43e4f06839cfaad866dc27b1b32186/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:70-87
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:70-87
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:4:3-66
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:4:20-63
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:7:3-64
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:7:20-61
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:8:3-78
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:8:20-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:9:3-77
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:9:20-74
+uses-permission#android.permission.INTERNET
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:10:3-64
+MERGED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:10:20-62
+uses-permission#android.permission.CAMERA
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:11:3-63
+MERGED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+MERGED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:11:20-60
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:12:3-78
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:12:20-75
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:13:3-79
+MERGED from [:react-native-fs] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [:react-native-fs] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:13:20-76
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:14:3-68
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:14:20-66
+application
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:3-58:17
+MERGED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:3-58:17
+MERGED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:3-58:17
+MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d2c68ce6ed18f5edfa1bccd01da9e58d/transformed/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d2c68ce6ed18f5edfa1bccd01da9e58d/transformed/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6bd72b6f0d0ca4e2cfbde8f8b5a6fe43/transformed/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6bd72b6f0d0ca4e2cfbde8f8b5a6fe43/transformed/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e3975213c4d25d9e8600a36cc1f9a9/transformed/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e3975213c4d25d9e8600a36cc1f9a9/transformed/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ddd2fc49cd9b358f623ff8f93d12b45b/transformed/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ddd2fc49cd9b358f623ff8f93d12b45b/transformed/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/70d9a6c790087fc29ce09ef29b1b87f1/transformed/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/70d9a6c790087fc29ce09ef29b1b87f1/transformed/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b0d17be3dd2255dc73a0ffc555937fa1/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b0d17be3dd2255dc73a0ffc555937fa1/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:48-80
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:48-80
+	tools:ignore
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:116-161
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:116-161
+	tools:targetApi
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:81-115
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:81-115
+	android:allowBackup
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:162-189
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:162-189
+	android:theme
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:190-221
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:190-221
+	android:usesCleartextTraffic
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:16-47
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:16:16-47
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:17:5-119
+	android:value
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:17:62-117
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:17:16-61
+activity#com.app.MainActivity
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:5-23:16
+	android:label
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:44-76
+	android:windowSoftInputMode
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:148-187
+	android:configChanges
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:77-147
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:18:15-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:19:7-22:23
+action#android.intent.action.MAIN
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:20:9-60
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:20:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:21:9-68
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:21:19-66
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:24:15-79
+meta-data#com.dieam.reactnativepushnotification.notification_channel_name
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:27:5-28:61
+	android:value
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:28:13-59
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:27:17-95
+meta-data#com.dieam.reactnativepushnotification.notification_channel_description
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:29:5-30:72
+	android:value
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:30:17-70
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:29:17-102
+meta-data#com.dieam.reactnativepushnotification.notification_color
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:31:5-32:58
+	android:resource
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:32:17-56
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:31:17-88
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:33:5-41:16
+	android:exported
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:35:9-32
+	android:permission
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:36:9-69
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:34:9-62
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.app
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:37:9-40:25
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:38:13-77
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:38:21-74
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:42:5-106
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:42:15-103
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:43:5-47:16
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:43:15-111
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:44:9-46:25
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:45:13-75
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:45:21-72
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:48:5-114
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:48:14-112
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:49:5-55:15
+	android:exported
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:51:9-33
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:50:9-106
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:52:9-54:25
+uses-sdk
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/be63524c73206aa53456cdaa0c8afd03/transformed/hermes-debug/AndroidManifest.xml:5:5-44
+MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/be63524c73206aa53456cdaa0c8afd03/transformed/hermes-debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_async-storage] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_geolocation] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_geolocation] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fs] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fs] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f022685e28863d119bcf0638943949e/transformed/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f022685e28863d119bcf0638943949e/transformed/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d2c68ce6ed18f5edfa1bccd01da9e58d/transformed/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d2c68ce6ed18f5edfa1bccd01da9e58d/transformed/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6bd72b6f0d0ca4e2cfbde8f8b5a6fe43/transformed/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6bd72b6f0d0ca4e2cfbde8f8b5a6fe43/transformed/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e3975213c4d25d9e8600a36cc1f9a9/transformed/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e3975213c4d25d9e8600a36cc1f9a9/transformed/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/aca75c18f0a93f8fbc8d6969902555fc/transformed/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/aca75c18f0a93f8fbc8d6969902555fc/transformed/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ddd2fc49cd9b358f623ff8f93d12b45b/transformed/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ddd2fc49cd9b358f623ff8f93d12b45b/transformed/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/70d9a6c790087fc29ce09ef29b1b87f1/transformed/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/70d9a6c790087fc29ce09ef29b1b87f1/transformed/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e8a231c1209e59be117f9b85fa19166b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e8a231c1209e59be117f9b85fa19166b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7b7d99dbd3a7005e03413609c6cd43ba/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7b7d99dbd3a7005e03413609c6cd43ba/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7b933633758f000a0cb77c1fb6ce3f81/transformed/swiperefreshlayout-1.1.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7b933633758f000a0cb77c1fb6ce3f81/transformed/swiperefreshlayout-1.1.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4728fc62f5f9566fc355ac6fab0632d0/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4728fc62f5f9566fc355ac6fab0632d0/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-image-resizer] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-resizer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-resizer] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-resizer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8367d3273d16951342d42142cf19aced/transformed/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8367d3273d16951342d42142cf19aced/transformed/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1f6779c9ede0bd27abb6a92b6478275e/transformed/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1f6779c9ede0bd27abb6a92b6478275e/transformed/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f226d81067ff9f9dbff97376825b9636/transformed/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f226d81067ff9f9dbff97376825b9636/transformed/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8def76295f798252d7e00af406e3b9e3/transformed/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8def76295f798252d7e00af406e3b9e3/transformed/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4b31d7271ae7cbcfa11039e85d124100/transformed/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4b31d7271ae7cbcfa11039e85d124100/transformed/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/39671204805580e0ba2ccbf60c384be8/transformed/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/39671204805580e0ba2ccbf60c384be8/transformed/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/11e48666792bb0f07bf4cd6a50c87fb8/transformed/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/11e48666792bb0f07bf4cd6a50c87fb8/transformed/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ae70438ffce1c45c477b5bca46d7348f/transformed/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ae70438ffce1c45c477b5bca46d7348f/transformed/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3dea943cb4ce7b454021db1621a48580/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3dea943cb4ce7b454021db1621a48580/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/12414dee4acfe9e0c8d119e431e0473e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/12414dee4acfe9e0c8d119e431e0473e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d713e3d977d9c30c27724fbf559ac183/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d713e3d977d9c30c27724fbf559ac183/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e70758084756de1db6e317030f30ee72/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e70758084756de1db6e317030f30ee72/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ee6bade21b8f121e7cb923f9c6f86716/transformed/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ee6bade21b8f121e7cb923f9c6f86716/transformed/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/186f927ac74cd134a12c57da9106c70f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/186f927ac74cd134a12c57da9106c70f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/769aa046b1baf995fcc9ed8f37d81fba/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/769aa046b1baf995fcc9ed8f37d81fba/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f145e21668df94eb5ec82a4a4506526f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f145e21668df94eb5ec82a4a4506526f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/67f09d2917b193324d3f9cb7378129cd/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/67f09d2917b193324d3f9cb7378129cd/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/55665595100588848af863b9777f59ab/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/55665595100588848af863b9777f59ab/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e857472a32423b1a6ebf681e38c56eff/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e857472a32423b1a6ebf681e38c56eff/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/40cb2546c4ad93b3a1cbd1af25f477fe/transformed/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/40cb2546c4ad93b3a1cbd1af25f477fe/transformed/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/130c3d9a640672c70eb21ab842f2d6c7/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/130c3d9a640672c70eb21ab842f2d6c7/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4ec6db95f51cc10e4ea4b1a37f620aa/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4ec6db95f51cc10e4ea4b1a37f620aa/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/302bea21af018d54cd28aa0348dc01b7/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/302bea21af018d54cd28aa0348dc01b7/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7672281ba7401ad987b495f8a9774ae7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/7672281ba7401ad987b495f8a9774ae7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/cbb6e196b2363e3197b6479fed6e485c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/cbb6e196b2363e3197b6479fed6e485c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d7ffd34e61f3accce83d49ad9a3d5849/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d7ffd34e61f3accce83d49ad9a3d5849/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b0d17be3dd2255dc73a0ffc555937fa1/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b0d17be3dd2255dc73a0ffc555937fa1/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ade9dd57f502ff5a44c38473454522f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ade9dd57f502ff5a44c38473454522f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8e15674e5d893e77025a61b692e2afcc/transformed/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8e15674e5d893e77025a61b692e2afcc/transformed/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/556e678c2e0f4d392b36d0573f660009/transformed/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/556e678c2e0f4d392b36d0573f660009/transformed/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4ef49bf693d0e4e7ec76185f77ca8fc/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4ef49bf693d0e4e7ec76185f77ca8fc/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8b91f012fb40d1e4075e1c9191a6c94e/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8b91f012fb40d1e4075e1c9191a6c94e/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/2c9cc9b9cda033541d2b43b25a119778/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/2c9cc9b9cda033541d2b43b25a119778/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f1be503d16827dbf8dbb96e324a2666/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f1be503d16827dbf8dbb96e324a2666/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4170a5c1d8503813ca258e2ea5da8f1/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c4170a5c1d8503813ca258e2ea5da8f1/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/33ab72d758fdaf84d28f267e118b49a9/transformed/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/33ab72d758fdaf84d28f267e118b49a9/transformed/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1396daf837bf7753040a793c5ec435fd/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1396daf837bf7753040a793c5ec435fd/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6c132967cff664c364ce4dfb233d71d8/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6c132967cff664c364ce4dfb233d71d8/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/95050ef01d6b438008c62465eb38bf39/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/95050ef01d6b438008c62465eb38bf39/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f43e4f06839cfaad866dc27b1b32186/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f43e4f06839cfaad866dc27b1b32186/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [:react-native-community_netinfo] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-73
+uses-feature#android.hardware.camera
+ADDED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+provider#com.imagepicker.ImagePickerProvider
+ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
+	android:exported
+		ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+	android:resource
+		ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+	android:name
+		ADDED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12 reason: org.umhan35 has a targetSdkVersion < 4
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4a799cb8e08fea13b5f2357bbfc4fd4d/transformed/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/df333dc3eeddc7bcda9dcfea6dfbe228/transformed/jetified-play-services-base-16.1.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/37e956cb948dcc1fc099701a45064139/transformed/jetified-play-services-basement-16.2.0/AndroidManifest.xml:24:13-58

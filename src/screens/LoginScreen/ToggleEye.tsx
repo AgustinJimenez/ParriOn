@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     fontSize: scale(0.8),
     marginHorizontal: scale(0.15),
     alignSelf: 'center',
-    color: colors.secondary(),
+    color: colors.support(),
   },
 })
 

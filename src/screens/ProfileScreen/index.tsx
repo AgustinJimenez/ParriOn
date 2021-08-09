@@ -1,22 +1,35 @@
 import React from 'react'
 import ImageUserDefault from '../../assets/images/UserImageDefault.png'
-import { Image, Text, TouchableOpacity } from 'react-native'
-import { View, Input, Item, Icon, Form } from 'native-base'
+import { ActivityIndicator, Image, Text, TouchableOpacity } from 'react-native'
+import { View } from 'native-base'
 
 import MainContainer from '../../components/MainContainer'
-import globalStyles, { colors, scale } from '../../theme'
 import styles from './styles'
 import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import { datasetSelector } from '../../redux/selectors'
 import SimpleButton from '../../components/SimpleButton'
-import { logoutAction } from '../../actions'
+import {
+  logoutAction,
+  profileScreenSagaAction,
+  updateProfileSagaAction,
+} from '../../actions'
 import { EditProfileScreenRouteName } from '../screensRoutes'
+import dayjs from 'dayjs'
+import CameraPicker from '../../components/CameraPicker'
+import { UserInterface } from '../../interfaces'
 
-const ProfileScreen = ({ navigation }) => {
+const ProfileScreen = ({ navigation }: any) => {
   const dispatch = useDispatch()
-  const user = useSelector((state) => datasetSelector(state, 'user'))
+  const user: UserInterface = useSelector((state) =>
+    datasetSelector(state, 'user')
+  )
+  const profile_photo_is_loading = useSelector((state) =>
+    datasetSelector(state, 'profile_photo_is_loading')
+  )
+  const birthdate = user.birthdate
   const { t } = useTranslation()
+  const [showCamera, setCameraStatus] = React.useState(false)
 
   const logout = React.useCallback(() => {
     dispatch(logoutAction())
@@ -25,27 +38,68 @@ const ProfileScreen = ({ navigation }) => {
     navigation.navigate(EditProfileScreenRouteName)
   }, [navigation])
 
+  const birthDateFormated = React.useMemo(() => {
+    return dayjs(birthdate).format('D [de] MMMM YYYY')
+  }, [birthdate, dayjs])
+
+  const updateProfilePicture = React.useCallback(
+    (base64) => {
+      dispatch(updateProfileSagaAction({ base64 }))
+    },
+    [dispatch]
+  )
+
+  React.useEffect(() => {
+    dispatch(profileScreenSagaAction())
+  }, [])
+
   return (
-    <MainContainer
-      hasShoppingCart
-      hasGoBackButton
-      title={t('your_profile')}
-      scrollPaddingBottom
-    >
-      <TouchableOpacity style={{ alignItems: 'center' }}>
-        <Image
-          source={{ uri: user?.image }}
-          defaultSource={ImageUserDefault}
-          style={styles.profileImage}
-        />
+    <MainContainer hasShoppingCart hasGoBackButton title={t('your_profile')}>
+      <TouchableOpacity
+        disabled={profile_photo_is_loading}
+        style={{ alignItems: 'center' }}
+        onPress={() => setCameraStatus(true)}
+      >
+        {!!profile_photo_is_loading ? (
+          <ActivityIndicator
+            style={styles.profilePhotoIsLoadingLoader}
+            size="large"
+          />
+        ) : (
+          <Image
+            source={!!user?.avatar ? { uri: user.avatar } : ImageUserDefault}
+            defaultSource={ImageUserDefault}
+            style={styles.profileImage}
+          />
+        )}
       </TouchableOpacity>
+      <CameraPicker
+        base64Data={user.avatar}
+        isVisible={showCamera}
+        onClose={() => setCameraStatus(false)}
+        onSave={updateProfilePicture}
+      />
 
       <View style={styles.fieldContainer}>
         {[
           { label: 'Nombre y apellido', value: user.name },
-          { label: 'Fecha de nacimiento', value: '20 de enero 1987' },
-          { label: 'Numero de teléfono', value: '+595 975 122387' },
-          { label: 'Direccion', value: 'Antequeran 532 c/ Tacuari' },
+          {
+            label: 'Fecha de nacimiento',
+            value: birthDateFormated,
+          },
+          { label: 'Numero de teléfono', value: user.cellphone },
+          {
+            label: 'Direccion',
+            value: `${user.addresses?.[0]?.address_1}${
+              !!user.addresses?.[0]?.house_number
+                ? ' ' + user.addresses?.[0]?.house_number
+                : ''
+            } ${
+              !!user.addresses?.[0]?.address_2
+                ? 'c/ ' + user.addresses?.[0]?.address_2
+                : ''
+            }`,
+          },
         ].map(({ label, value }, key) => (
           <React.Fragment key={key}>
             <Text style={styles.fieldLabel}>{label}</Text>

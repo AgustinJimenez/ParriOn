@@ -23,13 +23,13 @@ const styles = StyleSheet.create({
   price: {
     textAlign: 'center',
     color: 'white',
-    backgroundColor: colors.brandThird(),
+    backgroundColor: colors.midRed(),
     fontWeight: '900',
     fontSize: scale(0.37),
     paddingVertical: scale(0.1),
   },
   addCart: {
-    backgroundColor: colors.secondary(),
+    backgroundColor: colors.support(),
     justifyContent: 'center',
     paddingVertical: scale(0.2),
     fontSize: scale(0.3),

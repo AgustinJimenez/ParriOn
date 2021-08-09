@@ -2,22 +2,53 @@ import React from 'react'
 import { Text, View, TouchableOpacity } from 'react-native'
 import { colors, scale } from '../../theme'
 import { useNavigation } from '@react-navigation/native'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { datasetSelector, productSelectedSelector } from '../../redux/selectors'
 import Product from '../../models/Product'
-import { SummaryScreenRouteName } from '../../screens/screensRoutes'
+import { ShoppingCartScreenRouteName } from '../../screens/screensRoutes'
+import { setDatasetToReducerAction } from '../../redux/actions'
+import numberFormat from '../../utils/numberFormat'
 
 const AddProductButton = () => {
+  const dispatch = useDispatch()
   const navigation = useNavigation()
   const selected_product: Product = useSelector((state) =>
     productSelectedSelector(state)
   )
+
+  const selected_product_quantity: any = useSelector((state) =>
+    datasetSelector(state, 'selected_product_quantity')
+  )
   const shopping_cart: any = useSelector((state) =>
     datasetSelector(state, 'shopping_cart')
   )
-  const addProductToShoppingCart = React.useCallback(() => {
-    navigation.navigate(SummaryScreenRouteName)
-  }, [shopping_cart, navigation, SummaryScreenRouteName])
+
+  const alreadyOnCart = React.useMemo(() => {
+    return !!shopping_cart?.[selected_product?.id]
+  }, [shopping_cart, selected_product])
+
+  const updateShoppingCartProduct = React.useCallback(() => {
+    let updatedShoppingCart = shopping_cart
+    updatedShoppingCart[selected_product.id] = {
+      quantity: selected_product_quantity,
+    }
+
+    dispatch(setDatasetToReducerAction(null, 'selected_product_id'))
+    setTimeout(
+      () =>
+        dispatch(
+          setDatasetToReducerAction(updatedShoppingCart, 'shopping_cart')
+        ),
+      500
+    )
+
+    navigation.navigate(ShoppingCartScreenRouteName)
+  }, [
+    shopping_cart,
+    navigation,
+    ShoppingCartScreenRouteName,
+    selected_product_quantity,
+  ])
 
   return (
     <TouchableOpacity
@@ -29,16 +60,16 @@ const AddProductButton = () => {
         borderRadius: scale(0.3),
         marginVertical: scale(0.4),
       }}
-      onPress={addProductToShoppingCart}
+      onPress={updateShoppingCartProduct}
     >
       <Text
         style={{
-          color: colors.secondary(),
+          color: colors.support(),
           fontSize: scale(0.55),
           paddingRight: scale(0.6),
         }}
       >
-        Agregar al carrito
+        {alreadyOnCart ? 'Editar cantidad' : 'Agregar al carrito'}
       </Text>
       <View
         style={{
@@ -53,12 +84,12 @@ const AddProductButton = () => {
         <Text
           style={{
             fontSize: scale(0.45),
-            color: colors.secondary(),
+            color: colors.support(),
             textAlign: 'center',
             textAlignVertical: 'center',
           }}
         >
-          {selected_product.price_formated} Gs.
+          {numberFormat(selected_product_quantity * selected_product.price)} Gs.
         </Text>
       </View>
     </TouchableOpacity>

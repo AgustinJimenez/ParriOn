@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   profileImage: {
     width: scale(2.1),
     height: scale(2.1),
+    borderRadius: scale(2.1) / 2,
     marginTop: scale(0.5),
     marginBottom: scale(0.9),
   },
@@ -25,12 +26,12 @@ const styles = StyleSheet.create({
     marginBottom: scale(),
   },
   fieldLabel: {
-    color: colors.secondary(),
+    color: colors.support(),
     fontSize: scale(0.5),
     paddingTop: scale(0.3),
   },
   fieldValue: {
-    color: colors.light(),
+    color: colors.white(),
     fontSize: scale(0.7),
   },
   editDataButton: {
@@ -42,6 +43,9 @@ const styles = StyleSheet.create({
   },
   buttonTxt: {
     fontSize: scale(0.55),
+  },
+  profilePhotoIsLoadingLoader: {
+    marginVertical: scale(1.3),
   },
 })
 

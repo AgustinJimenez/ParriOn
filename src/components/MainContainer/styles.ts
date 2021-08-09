@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from 'react-native'
-import { colors, scale } from '../../theme'
+import { colors, scale, globalStyles } from '../../theme'
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
@@ -13,18 +13,27 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     position: 'absolute',
     top: scale(Platform.select({ ios: 1, android: 0.5 })),
+    ...globalStyles.elevationLow,
   },
-  avatarContainer: { position: 'absolute', left: scale(0.3) },
-  avatar: {
+  avatarContainer: {
+    position: 'absolute',
+    top: scale(Platform.select({ ios: 1.1, android: 0.4 })),
+    left: scale(0.2),
     width: scale(),
     height: scale(),
+    borderRadius: scale(),
+  },
+  avatar: {
+    width: '100%',
+    height: '100%',
+    borderRadius: scale() / 2,
     position: 'absolute',
-    top: scale(Platform.select({ ios: 1.1, android: 0.5 })),
   },
   goBackIconContainer: {
     position: 'absolute',
     top: scale(Platform.select({ ios: 1.1, android: 0.5 })),
     paddingHorizontal: scale(0.1),
+    ...globalStyles.elevationLow,
   },
   goBackIcon: {
     color: 'white',
@@ -36,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     textAlign: 'center',
     fontSize: scale(1.4),
-    marginTop: scale(2),
+    marginTop: scale(2.4),
   },
 })
 export default styles

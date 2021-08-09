@@ -1,13 +1,20 @@
-import { call, put /* , call  */ } from 'redux-saga/effects'
+import { call, put /* , call  */, select } from 'redux-saga/effects'
 import { EDIT_PROFILE_SAGA } from '../../actions/types'
 import { takeLatest } from 'redux-saga/effects'
 import showToast from '../../utils/showToast'
-import { loginApiRoute, profileApiRoute } from '../../api/routes'
+import {
+  addressesApiRoute,
+  changePasswordApiRoute,
+  profileApiRoute,
+} from '../../api/routes'
 // import request from './request'
 import { setDatasetToReducerAction } from '../../redux/actions'
 import sleep from '../../utils/sleep'
 import * as RootNavigation from '../../app/NavigationProvider/service'
 import request from '../../sagas/request'
+import { CommonActions } from '@react-navigation/routers'
+import { ProfileScreenRouteName } from '../screensRoutes'
+import { datasetSelector } from '../../redux/selectors'
 
 export function* editProfile({
   firstNames,
@@ -20,38 +27,103 @@ export function* editProfile({
   otherReferences,
 }: any) {
   yield put(setDatasetToReducerAction(true, 'edit_profile_is_submiting'))
-  /* 
-  var { data, error, message } = yield call(request, {
+  const user: any = yield select((state) => datasetSelector(state, 'user'))
+
+  var { data, error, message, response } = yield call(request, {
     url: profileApiRoute,
     method: 'POST',
-    params: { 
-      firstNames,
-      lastNames,
-      birthDate,
-      password,
-      principalAddress,
-      secondaryAddress,
-      houseNumber,
-      otherReferences,
+    params: {
+      name: firstNames,
+      last_name: lastNames,
+      birthdate: birthDate,
+      avatar: null, //user.avatar,
+      cellphone: user.cellphone,
     },
     // debug: true,
-  })  
-  */
-  /* 
-  if (error && !!message) {
-    yield showToast(message, { type: 'danger' })
+  })
+
+  if (error) {
+    let msg = ''
+    if (!!response?.['data']?.['errors'])
+      msg = Object.keys(response?.['data']?.['errors'] || [])
+        .map((key) => response?.['data']?.['errors']?.[key]?.[0])
+        .join(',')
+    else msg = message
+
+    yield showToast(!!msg ? msg : 'Ocurrio un error inesperado', {
+      type: 'danger',
+    })
+    yield put(setDatasetToReducerAction(false, 'edit_profile_is_submiting'))
     return
   }
 
-  if (!error && !!data['access_token']) {
-    yield put(setDatasetToReducer(data['access_token'], 'auth_token'))
-    var { data, error, message } = yield call(request, {
-      url: profileApiRoute,
+  var { data, error, message, response } = yield call(request, {
+    url: addressesApiRoute,
+    method: 'POST',
+    params: {
+      user_id: user?.id,
+      address_1: principalAddress,
+      address_2: secondaryAddress,
+      house_number: houseNumber,
+      latitude: user?.addresses?.[0]?.latitude,
+      longitude: user?.addresses?.[0]?.longitude,
+      reference: otherReferences,
+    },
+    // debug: true,
+  })
+
+  if (error) {
+    let msg = ''
+    if (!!response?.['data']?.['errors'])
+      msg = Object.keys(response?.['data']?.['errors'] || [])
+        .map((key) => response?.['data']?.['errors']?.[key]?.[0])
+        .join(',')
+    else msg = message
+
+    yield showToast(!!msg ? msg : 'Ocurrio un error inesperado', {
+      type: 'danger',
+    })
+    yield put(setDatasetToReducerAction(false, 'edit_profile_is_submiting'))
+    return
+  }
+
+  if (!!password) {
+    var { data, error, message, response } = yield call(request, {
+      url: changePasswordApiRoute,
+      method: 'POST',
+      params: {
+        password,
+        password_confirmation: password,
+      },
       // debug: true,
     })
-    if (!error && !!data) yield put(setDatasetToReducer(data, 'user'))
-  } */
+
+    if (error) {
+      let msg = ''
+      if (!!response?.['data']?.['errors'])
+        msg = Object.keys(response?.['data']?.['errors'] || [])
+          .map((key) => response?.['data']?.['errors']?.[key]?.[0])
+          .join(',')
+      else msg = message
+
+      yield showToast(!!msg ? msg : 'Ocurrio un error inesperado', {
+        type: 'danger',
+      })
+      yield put(setDatasetToReducerAction(false, 'edit_profile_is_submiting'))
+      return
+    }
+  }
+
+  var { data, error, message } = yield call(request, {
+    url: profileApiRoute,
+    // debug: true,
+  })
+  if (!error && !!data) yield put(setDatasetToReducerAction(data, 'user'))
   yield put(setDatasetToReducerAction(false, 'edit_profile_is_submiting'))
+  yield showToast('El perfil se actualizo correctamente', {
+    type: 'success',
+  })
+  RootNavigation.dispatch(CommonActions.goBack())
 }
 
 export function* editProfileSagas() {

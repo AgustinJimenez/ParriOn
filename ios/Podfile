@@ -6,9 +6,9 @@ platform :ios, '10.0'
 target 'app' do
 
   #REACT-NATIVE-PERMISSIONS-CONFIG-START(DO NOT DELETE)
-    permissions_path = '../node_modules/react-native-permissions/ios'
-    pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
-    pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications.podspec"
+    # permissions_path = '../node_modules/react-native-permissions/ios'
+    # pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
+    # pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications.podspec"
   #REACT-NATIVE-PERMISSIONS-CONFIG-END
   config = use_native_modules!
   use_react_native!(:path => config["reactNativePath"])

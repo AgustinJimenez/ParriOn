@@ -10,6 +10,10 @@ import { editProfileSagas } from '../screens/EditProfileScreen/saga'
 import { categoriesSaga } from '../screens/CategoriesScreen/saga'
 import { homeScreenSaga } from '../screens/HomeScreen/saga'
 import { productsScreenSaga } from '../screens/ProductsScreen/saga'
+import {
+  profileSagas,
+  updateProfilePhotoSaga,
+} from '../screens/ProfileScreen/saga'
 
 export default function* rootSaga() {
   yield all([
@@ -23,5 +27,7 @@ export default function* rootSaga() {
     categoriesSaga(),
     homeScreenSaga(),
     productsScreenSaga(),
+    profileSagas(),
+    updateProfilePhotoSaga(),
   ])
 }
