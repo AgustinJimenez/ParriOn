@@ -41,6 +41,8 @@
     "i:d:p": "yarn run ios:device:production",
     "pod:update": "cd ios && pod update && cd ..",
     "pod:install": "npx pod-install ios",
+    "pod:install:m1": "cd ios && arch -x86_64 pod install --repo-update && cd ..",
+    "p:i:m": "yarn pod:install:m1",
     "p:i": "yarn pod:install",
     "i:p:i": "yarn run ios:pod:install",
     "ios:pod:update": "cd ios && pod update && cd ..",
