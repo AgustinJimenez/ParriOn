@@ -99,7 +99,7 @@ const MainContainer = (props: MainContainerProps) => {
     title = '',
     refreshing = false,
     onRefresh,
-    scrollHeight = '100%',
+    scrollHeight = Platform.select({ ios: '100%', android: '140%' }),
     renderBottomView = () => {},
     topFlameIconStyles = {},
   } = props

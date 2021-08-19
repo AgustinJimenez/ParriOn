@@ -129,9 +129,18 @@ androidx/asynclayoutinflater/R.java
  androidx.asynclayoutinflater.R$string
  androidx.asynclayoutinflater.R$style
  androidx.asynclayoutinflater.R$styleable
-com/app/MainApplication.java
- com.app.MainApplication
- com.app.MainApplication$1
+androidx/vectordrawable/animated/R.java
+ androidx.vectordrawable.animated.R
+ androidx.vectordrawable.animated.R$attr
+ androidx.vectordrawable.animated.R$color
+ androidx.vectordrawable.animated.R$dimen
+ androidx.vectordrawable.animated.R$drawable
+ androidx.vectordrawable.animated.R$id
+ androidx.vectordrawable.animated.R$integer
+ androidx.vectordrawable.animated.R$layout
+ androidx.vectordrawable.animated.R$string
+ androidx.vectordrawable.animated.R$style
+ androidx.vectordrawable.animated.R$styleable
 org/reactnative/camera/R.java
  org.reactnative.camera.R
  org.reactnative.camera.R$anim
@@ -553,8 +562,18 @@ androidx/legacy/coreutils/R.java
  androidx.legacy.coreutils.R$string
  androidx.legacy.coreutils.R$style
  androidx.legacy.coreutils.R$styleable
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
+androidx/viewpager2/R.java
+ androidx.viewpager2.R
+ androidx.viewpager2.R$attr
+ androidx.viewpager2.R$color
+ androidx.viewpager2.R$dimen
+ androidx.viewpager2.R$drawable
+ androidx.viewpager2.R$id
+ androidx.viewpager2.R$integer
+ androidx.viewpager2.R$layout
+ androidx.viewpager2.R$string
+ androidx.viewpager2.R$style
+ androidx.viewpager2.R$styleable
 com/facebook/drawee/R.java
  com.facebook.drawee.R
  com.facebook.drawee.R$attr
@@ -643,27 +662,23 @@ com/swmansion/gesturehandler/react/R.java
  com.swmansion.gesturehandler.react.R$xml
 androidx/lifecycle/viewmodel/savedstate/R.java
  androidx.lifecycle.viewmodel.savedstate.R
-androidx/viewpager2/R.java
- androidx.viewpager2.R
- androidx.viewpager2.R$attr
- androidx.viewpager2.R$color
- androidx.viewpager2.R$dimen
- androidx.viewpager2.R$drawable
- androidx.viewpager2.R$id
- androidx.viewpager2.R$integer
- androidx.viewpager2.R$layout
- androidx.viewpager2.R$string
- androidx.viewpager2.R$style
- androidx.viewpager2.R$styleable
-androidx/vectordrawable/animated/R.java
- androidx.vectordrawable.animated.R
- androidx.vectordrawable.animated.R$attr
- androidx.vectordrawable.animated.R$color
- androidx.vectordrawable.animated.R$dimen
- androidx.vectordrawable.animated.R$drawable
- androidx.vectordrawable.animated.R$id
- androidx.vectordrawable.animated.R$integer
- androidx.vectordrawable.animated.R$layout
- androidx.vectordrawable.animated.R$string
- androidx.vectordrawable.animated.R$style
- androidx.vectordrawable.animated.R$styleable
+com/zoontek/rnpermissions/R.java
+ com.zoontek.rnpermissions.R
+ com.zoontek.rnpermissions.R$anim
+ com.zoontek.rnpermissions.R$attr
+ com.zoontek.rnpermissions.R$bool
+ com.zoontek.rnpermissions.R$color
+ com.zoontek.rnpermissions.R$dimen
+ com.zoontek.rnpermissions.R$drawable
+ com.zoontek.rnpermissions.R$id
+ com.zoontek.rnpermissions.R$integer
+ com.zoontek.rnpermissions.R$layout
+ com.zoontek.rnpermissions.R$string
+ com.zoontek.rnpermissions.R$style
+ com.zoontek.rnpermissions.R$styleable
+ com.zoontek.rnpermissions.R$xml
+com/app/MainApplication.java
+ com.app.MainApplication
+ com.app.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

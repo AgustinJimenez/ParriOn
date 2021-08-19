@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 
 const AuthLoadingScreen = ({}) => {
   return (
-    <MainContainer hasTopFlameLogo={false}>
+    <MainContainer hasTopFlameLogo={false} scrollHeight="100%">
       <View style={styles.container}>
         <Image source={ImageLogo} style={styles.image} />
       </View>

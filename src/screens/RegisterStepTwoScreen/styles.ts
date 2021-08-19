@@ -50,6 +50,8 @@ const styles = StyleSheet.create({
   },
   saveBtn: {
     width: '100%',
+    position: 'absolute',
+    bottom: scale(),
   },
   saveBtnTxt: {
     color: colors.support(),
@@ -78,6 +80,9 @@ const styles = StyleSheet.create({
   locateInMapExitBtn: {
     color: 'white',
     fontSize: scale(0.8),
+  },
+  mapLoader: {
+    marginTop: scale(2),
   },
 })
 export default styles

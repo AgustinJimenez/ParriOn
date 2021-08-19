@@ -11,21 +11,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { datasetSelector } from '../../redux/selectors'
 import { registerAction } from '../../actions'
 import { setDatasetToReducerAction } from '../../redux/actions'
-import { ScrollView, TouchableOpacity } from 'react-native'
+import { ActivityIndicator, Platform, TouchableOpacity } from 'react-native'
 import Geolocation from '@react-native-community/geolocation'
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import sleep from '../../utils/sleep'
+import { check, PERMISSIONS, RESULTS, request } from 'react-native-permissions'
 
-const mapDefaultLocation = {
-  latitude: -25.302637,
-  longitude: -57.574907,
-  latitudeDelta: 0.1,
-  longitudeDelta: 0.09,
-}
+var tmpTimer: any = null
 
 const RegisterStepTwoScreen = ({ route }: any) => {
-  const [mapInitialRegion, setInitialRegion] = React.useState(
-    mapDefaultLocation
-  )
   const {
     email,
     firstNames,
@@ -43,8 +36,11 @@ const RegisterStepTwoScreen = ({ route }: any) => {
   const [secondaryAddress, setSecondaryAddress] = React.useState('')
   const [houseNumber, setHouseNumber] = React.useState('')
   const [otherReferences, setOtherReferences] = React.useState('')
+  const [mapModalShowedFirstTime, setMapModalShowedFirstTime] = React.useState(
+    false
+  )
   const [location, setLocation] = React.useState<Region>()
-  const [tmpLocation, setTmpLocation] = React.useState<Region>(mapInitialRegion)
+  const [tmpLocation, setTmpLocation] = React.useState<Region>(null)
 
   const principalAddressRef: React.RefObject<any> = React.useRef()
   const secondaryAddressRef: React.RefObject<any> = React.useRef()
@@ -54,12 +50,7 @@ const RegisterStepTwoScreen = ({ route }: any) => {
   const [showMapLocation, setMapLocationVisibility] = React.useState(false)
 
   const formIsValid = React.useMemo(() => {
-    return (
-      !!principalAddress &&
-      !!secondaryAddress &&
-      !!location &&
-      JSON.stringify(mapInitialRegion) !== JSON.stringify(location)
-    )
+    return !!principalAddress && !!secondaryAddress && !!location?.latitude
   }, [principalAddress, secondaryAddress, location])
 
   const register = () => {
@@ -81,17 +72,66 @@ const RegisterStepTwoScreen = ({ route }: any) => {
 
   React.useEffect(() => {
     dispatch(setDatasetToReducerAction(false, 'register_is_loading'))
-    Geolocation.getCurrentPosition(({ coords: { latitude, longitude } }) => {
-      const location = {
-        latitude,
-        longitude,
-        latitudeDelta: 0.1,
-        longitudeDelta: 0.09,
-      }
-      setInitialRegion(location)
-      setTmpLocation(location)
-    })
   }, [])
+
+  const modalMapOnShow = React.useCallback(async () => {
+    try {
+      let permissionIsGranted = false
+
+      if (!mapModalShowedFirstTime) {
+        const checkPermissionResults = await check(
+          Platform.select({
+            ios: PERMISSIONS.IOS.LOCATION_WHEN_IN_USE,
+            android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
+          })
+        )
+        console.log('SECOND ===> ', { checkPermissionResults })
+        if (checkPermissionResults === RESULTS.GRANTED)
+          permissionIsGranted = true
+
+        if (!permissionIsGranted) {
+          const requestPermissionResults = await request(
+            Platform.select({
+              ios: PERMISSIONS.IOS.LOCATION_WHEN_IN_USE,
+              android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
+            })
+          )
+          console.log('THIRD ===> ', { requestPermissionResults })
+          if (requestPermissionResults !== RESULTS.GRANTED)
+            setMapLocationVisibility(false)
+          return
+        }
+        console.log('FOURTH ===> ', { checkPermissionResults })
+        Geolocation?.requestAuthorization?.()
+        Geolocation.getCurrentPosition(
+          ({ coords: { latitude, longitude } }) => {
+            console.log('FIVE ===> ')
+            const location = {
+              latitude,
+              longitude,
+              latitudeDelta: 0.1,
+              longitudeDelta: 0.09,
+            }
+            console.log('Geolocation.getCurrentPosition ===> ', {
+              checkPermissionResults,
+              location,
+            })
+            setTmpLocation(location)
+            sleep(500)
+            setMapModalShowedFirstTime(true)
+          }
+        )
+      }
+    } catch (error) {
+      console.log('modalMapOnShow error ==> ', error)
+    }
+  }, [
+    Geolocation,
+    mapModalShowedFirstTime,
+    setMapModalShowedFirstTime,
+    setTmpLocation,
+  ])
+
   return (
     <>
       <MainContainer title={t('add_your_address')}>
@@ -183,9 +223,9 @@ const RegisterStepTwoScreen = ({ route }: any) => {
             <Modal
               isVisible={showMapLocation}
               onBackdropPress={() => {
-                setTmpLocation(mapInitialRegion)
                 setMapLocationVisibility(false)
               }}
+              onModalShow={modalMapOnShow}
               style={styles.locateInMapModal}
             >
               <View style={styles.locateInMapModalContent}>
@@ -195,29 +235,42 @@ const RegisterStepTwoScreen = ({ route }: any) => {
                 <Text style={styles.locateInMapModalSubTitleTxt}>
                   {t('move_the_map_to_locate_your_shipping_place')}.
                 </Text>
-                {!!tmpLocation?.latitude && (
+                {!mapModalShowedFirstTime && (
+                  <ActivityIndicator
+                    style={styles.mapLoader}
+                    size="large"
+                    color="white"
+                  />
+                )}
+                {!!mapModalShowedFirstTime && !!tmpLocation?.latitude && (
                   <MapView
                     style={styles.map}
-                    onRegionChange={(region: Region) => setTmpLocation(region)}
+                    onRegionChange={(region: Region) => {
+                      clearTimeout(tmpTimer)
+                      tmpTimer = setTimeout(() => {
+                        setTmpLocation(region)
+                      }, 5)
+                    }}
                     initialRegion={tmpLocation}
                   >
                     <Marker coordinate={tmpLocation} />
                   </MapView>
                 )}
-                <SimpleButton
-                  dark
-                  style={styles.saveBtn}
-                  onPress={() => {
-                    setLocation(tmpLocation)
-                    setMapLocationVisibility(false)
-                  }}
-                >
-                  <Text style={styles.saveBtnTxt}>{t('save')}</Text>
-                </SimpleButton>
+                {!!mapModalShowedFirstTime && (
+                  <SimpleButton
+                    dark
+                    style={styles.saveBtn}
+                    onPress={() => {
+                      setLocation(tmpLocation)
+                      setMapLocationVisibility(false)
+                    }}
+                  >
+                    <Text style={styles.saveBtnTxt}>{t('save')}</Text>
+                  </SimpleButton>
+                )}
               </View>
               <TouchableOpacity
                 onPress={() => {
-                  setTmpLocation(mapInitialRegion)
                   setMapLocationVisibility(false)
                 }}
                 style={styles.locateInMapExitBtnContainer}

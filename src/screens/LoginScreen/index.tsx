@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Input, Item, Text, Button, Form } from 'native-base'
-import { Image, ActivityIndicator } from 'react-native'
+import { Image, ActivityIndicator, Platform } from 'react-native'
 import MainContainer from '../../components/MainContainer'
 import ImageFlame from '../../assets/images/flame.png'
 import { globalStyles } from '../../theme'
@@ -68,7 +68,7 @@ const LoginScreen = ({ navigation }: any) => {
   }, [navigation, dispatch])
 
   return (
-    <MainContainer>
+    <MainContainer scrollHeight="100%">
       <View style={styles.formContainer}>
         <Form style={styles.form}>
           <Text style={styles.welcome}>Bienvenido</Text>

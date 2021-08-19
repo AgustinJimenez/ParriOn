@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     position: 'absolute',
     top: scale(Platform.select({ ios: 1, android: 0.5 })),
-    ...globalStyles.elevationLow,
+    ...{
+      ...Platform.select({ ios: globalStyles.elevationLow, android: null }),
+    },
   },
   avatarContainer: {
     position: 'absolute',
