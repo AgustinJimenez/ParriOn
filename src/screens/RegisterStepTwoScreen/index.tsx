@@ -1,5 +1,12 @@
 import React from 'react'
-import { View, Input, Item, Icon, Form, Text } from 'native-base'
+import {
+  Platform,
+  TouchableOpacity,
+  ActivityIndicator,
+  View,
+  Text,
+} from 'react-native'
+import { Input, Item, Icon, Form } from 'native-base'
 import MainContainer from '../../components/MainContainer'
 import styles from './styles'
 import globalStyles from '../../theme'
@@ -11,14 +18,23 @@ import { useDispatch, useSelector } from 'react-redux'
 import { datasetSelector } from '../../redux/selectors'
 import { registerAction } from '../../actions'
 import { setDatasetToReducerAction } from '../../redux/actions'
-import { ActivityIndicator, Platform, TouchableOpacity } from 'react-native'
 import Geolocation from '@react-native-community/geolocation'
 import sleep from '../../utils/sleep'
 import { check, PERMISSIONS, RESULTS, request } from 'react-native-permissions'
+import LocationEnabler from 'react-native-location-enabler'
 
 var tmpTimer: any = null
 
 const RegisterStepTwoScreen = ({ route }: any) => {
+  const {
+    useLocationSettings,
+    PRIORITIES: { HIGH_ACCURACY },
+  } = LocationEnabler
+  const [enabled, requestResolution] = useLocationSettings({
+    priority: HIGH_ACCURACY, // optional: default BALANCED_POWER_ACCURACY
+    alwaysShow: true, // optional: default false
+    needBle: true, // optional: default false
+  })
   const {
     email,
     firstNames,
@@ -39,8 +55,8 @@ const RegisterStepTwoScreen = ({ route }: any) => {
   const [mapModalShowedFirstTime, setMapModalShowedFirstTime] = React.useState(
     false
   )
-  const [location, setLocation] = React.useState<Region>()
-  const [tmpLocation, setTmpLocation] = React.useState<Region>(null)
+  const [location, setLocation] = React.useState<Region | undefined>()
+  const [tmpLocation, setTmpLocation] = React.useState<Region | null>(null)
 
   const principalAddressRef: React.RefObject<any> = React.useRef()
   const secondaryAddressRef: React.RefObject<any> = React.useRef()
@@ -74,7 +90,7 @@ const RegisterStepTwoScreen = ({ route }: any) => {
     dispatch(setDatasetToReducerAction(false, 'register_is_loading'))
   }, [])
 
-  const modalMapOnShow = React.useCallback(async () => {
+  const modalMapOnShow: any = React.useCallback(async () => {
     try {
       let permissionIsGranted = false
 
@@ -85,7 +101,6 @@ const RegisterStepTwoScreen = ({ route }: any) => {
             android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
           })
         )
-        console.log('SECOND ===> ', { checkPermissionResults })
         if (checkPermissionResults === RESULTS.GRANTED)
           permissionIsGranted = true
 
@@ -96,30 +111,24 @@ const RegisterStepTwoScreen = ({ route }: any) => {
               android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
             })
           )
-          console.log('THIRD ===> ', { requestPermissionResults })
           if (requestPermissionResults !== RESULTS.GRANTED)
             setMapLocationVisibility(false)
           return
         }
-        console.log('FOURTH ===> ', { checkPermissionResults })
-        Geolocation?.requestAuthorization?.()
         Geolocation.getCurrentPosition(
           ({ coords: { latitude, longitude } }) => {
-            console.log('FIVE ===> ')
             const location = {
               latitude,
               longitude,
               latitudeDelta: 0.1,
               longitudeDelta: 0.09,
             }
-            console.log('Geolocation.getCurrentPosition ===> ', {
-              checkPermissionResults,
-              location,
-            })
             setTmpLocation(location)
             sleep(500)
             setMapModalShowedFirstTime(true)
-          }
+          },
+          console.log,
+          { enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 }
         )
       }
     } catch (error) {
@@ -131,6 +140,15 @@ const RegisterStepTwoScreen = ({ route }: any) => {
     setMapModalShowedFirstTime,
     setTmpLocation,
   ])
+
+  const onMapButtonTap = React.useCallback(() => {
+    if (enabled) setMapLocationVisibility(true)
+    else requestResolution()
+  }, [enabled, modalMapOnShow, requestResolution])
+
+  LocationEnabler.addListener(({ locationEnabled }) => {
+    if (locationEnabled) onMapButtonTap()
+  })
 
   return (
     <>
@@ -208,7 +226,7 @@ const RegisterStepTwoScreen = ({ route }: any) => {
               globalStyles.secondaryBorder,
               styles.locateInMapContainer,
             ]}
-            onPress={() => setMapLocationVisibility(true)}
+            onPress={onMapButtonTap}
           >
             <View style={styles.locateInMapTxtContainer}>
               <Text style={styles.locateInMapTxt}>{t('locate_in_map')}</Text>
@@ -235,27 +253,32 @@ const RegisterStepTwoScreen = ({ route }: any) => {
                 <Text style={styles.locateInMapModalSubTitleTxt}>
                   {t('move_the_map_to_locate_your_shipping_place')}.
                 </Text>
-                {!mapModalShowedFirstTime && (
-                  <ActivityIndicator
-                    style={styles.mapLoader}
-                    size="large"
-                    color="white"
-                  />
-                )}
-                {!!mapModalShowedFirstTime && !!tmpLocation?.latitude && (
-                  <MapView
-                    style={styles.map}
-                    onRegionChange={(region: Region) => {
-                      clearTimeout(tmpTimer)
-                      tmpTimer = setTimeout(() => {
-                        setTmpLocation(region)
-                      }, 5)
-                    }}
-                    initialRegion={tmpLocation}
-                  >
-                    <Marker coordinate={tmpLocation} />
-                  </MapView>
-                )}
+                {(() => {
+                  if (!enabled) return <Text>Location is not enabled</Text>
+                  else if (!mapModalShowedFirstTime)
+                    return (
+                      <ActivityIndicator
+                        style={styles.mapLoader}
+                        size="large"
+                        color="white"
+                      />
+                    )
+                  else if (!!mapModalShowedFirstTime && !!tmpLocation?.latitude)
+                    return (
+                      <MapView
+                        style={styles.map}
+                        onRegionChange={(region: Region) => {
+                          clearTimeout(tmpTimer)
+                          tmpTimer = setTimeout(() => {
+                            setTmpLocation(region)
+                          }, 5)
+                        }}
+                        initialRegion={tmpLocation}
+                      >
+                        <Marker coordinate={tmpLocation} />
+                      </MapView>
+                    )
+                })()}
                 {!!mapModalShowedFirstTime && (
                   <SimpleButton
                     dark

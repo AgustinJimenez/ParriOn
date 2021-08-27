@@ -14,6 +14,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { navigationRef } from './NavigationProvider/service'
 //import { disableYellowBox, ignoreWarnings } from '../../env.json'
 import GlobalFont from 'react-native-global-font'
+import Geolocation from '@react-native-community/geolocation'
 import StyleProvider from './StyleProvider'
 import dayjs from 'dayjs'
 import 'dayjs/locale/es'
@@ -24,9 +25,16 @@ console.disableYellowBox = true
 const App = () => {
   const [isReady, setIsReady] = React.useState(__DEV__ ? false : true)
   const [initialState, setInitialState] = React.useState()
-  React.useEffect(() => {
+  const init = React.useCallback(() => {
     GlobalFont.applyGlobal('CircularStd-Book')
-  }, [])
+    Geolocation.setRNConfiguration({
+      authorizationLevel: 'whenInUse',
+      skipPermissionRequests: false,
+    })
+  }, [GlobalFont])
+  React.useEffect(() => {
+    init()
+  }, [init])
   React.useEffect(() => {
     const restoreState = async () => {
       try {
