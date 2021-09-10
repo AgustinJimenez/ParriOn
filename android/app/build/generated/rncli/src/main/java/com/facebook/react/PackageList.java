@@ -23,6 +23,8 @@ import org.reactnative.maskedview.RNCMaskedViewPackage;
 import com.reactnativecommunity.netinfo.NetInfoPackage;
 // @react-native-community/picker
 import com.reactnativecommunity.picker.RNCPickerPackage;
+// react-native-android-location-enabler
+import com.heanoria.library.reactnative.locationenabler.RNAndroidLocationEnablerPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-fs
@@ -33,8 +35,6 @@ import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.imagepicker.ImagePickerPackage;
 // react-native-image-resizer
 import fr.bamlab.rnimageresizer.ImageResizerPackage;
-// react-native-location-enabler
-import com.reactnativelocationenabler.LocationEnablerPackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
 // react-native-permissions
@@ -100,12 +100,12 @@ public class PackageList {
       new RNCMaskedViewPackage(),
       new NetInfoPackage(),
       new RNCPickerPackage(),
+      new RNAndroidLocationEnablerPackage(),
       new RNCameraPackage(),
       new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
       new ImageResizerPackage(),
-      new LocationEnablerPackage(),
       new MapsPackage(),
       new RNPermissionsPackage(),
       new SafeAreaContextPackage(),

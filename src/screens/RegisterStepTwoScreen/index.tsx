@@ -20,21 +20,19 @@ import { registerAction } from '../../actions'
 import { setDatasetToReducerAction } from '../../redux/actions'
 import Geolocation from '@react-native-community/geolocation'
 import sleep from '../../utils/sleep'
-import { check, PERMISSIONS, RESULTS, request } from 'react-native-permissions'
-import LocationEnabler from 'react-native-location-enabler'
+import {
+  check,
+  PERMISSIONS,
+  RESULTS,
+  request,
+  Permission,
+} from 'react-native-permissions'
+import RNAndroidLocationEnabler from 'react-native-android-location-enabler'
 
 var tmpTimer: any = null
 
 const RegisterStepTwoScreen = ({ route }: any) => {
-  const {
-    useLocationSettings,
-    PRIORITIES: { HIGH_ACCURACY },
-  } = LocationEnabler
-  const [enabled, requestResolution] = useLocationSettings({
-    priority: HIGH_ACCURACY, // optional: default BALANCED_POWER_ACCURACY
-    alwaysShow: true, // optional: default false
-    needBle: true, // optional: default false
-  })
+  const enabled = true
   const {
     email,
     firstNames,
@@ -91,49 +89,21 @@ const RegisterStepTwoScreen = ({ route }: any) => {
   }, [])
 
   const modalMapOnShow: any = React.useCallback(async () => {
-    try {
-      let permissionIsGranted = false
-
-      if (!mapModalShowedFirstTime) {
-        const checkPermissionResults = await check(
-          Platform.select({
-            ios: PERMISSIONS.IOS.LOCATION_WHEN_IN_USE,
-            android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
-          })
-        )
-        if (checkPermissionResults === RESULTS.GRANTED)
-          permissionIsGranted = true
-
-        if (!permissionIsGranted) {
-          const requestPermissionResults = await request(
-            Platform.select({
-              ios: PERMISSIONS.IOS.LOCATION_WHEN_IN_USE,
-              android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
-            })
-          )
-          if (requestPermissionResults !== RESULTS.GRANTED)
-            setMapLocationVisibility(false)
-          return
+    Geolocation.getCurrentPosition(
+      ({ coords: { latitude, longitude } }) => {
+        const location = {
+          latitude,
+          longitude,
+          latitudeDelta: 0.1,
+          longitudeDelta: 0.09,
         }
-        Geolocation.getCurrentPosition(
-          ({ coords: { latitude, longitude } }) => {
-            const location = {
-              latitude,
-              longitude,
-              latitudeDelta: 0.1,
-              longitudeDelta: 0.09,
-            }
-            setTmpLocation(location)
-            sleep(500)
-            setMapModalShowedFirstTime(true)
-          },
-          console.log,
-          { enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 }
-        )
-      }
-    } catch (error) {
-      console.log('modalMapOnShow error ==> ', error)
-    }
+        setTmpLocation(location)
+        sleep(500)
+        setMapModalShowedFirstTime(true)
+      },
+      console.log,
+      { enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 }
+    )
   }, [
     Geolocation,
     mapModalShowedFirstTime,
@@ -141,10 +111,52 @@ const RegisterStepTwoScreen = ({ route }: any) => {
     setTmpLocation,
   ])
 
-  const onMapButtonTap = React.useCallback(() => {
-    if (enabled) setMapLocationVisibility(true)
-    else requestResolution()
-  }, [enabled, modalMapOnShow, requestResolution])
+  const onMapButtonTap = React.useCallback(async () => {
+    try {
+      if (!mapModalShowedFirstTime) {
+        const checkPermissionResults = await check(
+          Platform.select({
+            ios: PERMISSIONS.IOS.LOCATION_WHEN_IN_USE,
+            android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
+          }) as Permission
+        )
+
+        if (checkPermissionResults !== RESULTS.GRANTED) {
+          const requestPermissionResults = await request(
+            Platform.select({
+              ios: PERMISSIONS.IOS.LOCATION_WHEN_IN_USE,
+              android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
+            }) as Permission
+          )
+          if (requestPermissionResults !== RESULTS.GRANTED) return
+        }
+      }
+    } catch (error) {
+      console.log('modalMapOnShow error ==> ', error)
+    }
+    switch (Platform.OS) {
+      case 'android':
+        try {
+          const result: string = await RNAndroidLocationEnabler.promptForEnableLocationIfNeeded(
+            {
+              interval: 10000,
+              fastInterval: 5000,
+            }
+          )
+          if (result.includes('enabled')) setMapLocationVisibility(true)
+        } catch (e) {
+          console.log(e)
+        }
+
+        break
+      case 'ios':
+        setMapLocationVisibility(true)
+        break
+
+      default:
+        break
+    }
+  }, [enabled, modalMapOnShow])
 
   return (
     <>
@@ -286,7 +298,7 @@ const RegisterStepTwoScreen = ({ route }: any) => {
                     dark
                     style={styles.saveBtn}
                     onPress={() => {
-                      setLocation(tmpLocation)
+                      setLocation(tmpLocation as Region)
                       setMapLocationVisibility(false)
                     }}
                   >

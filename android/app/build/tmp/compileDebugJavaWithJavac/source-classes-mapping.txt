@@ -585,6 +585,21 @@ androidx/legacy/coreutils/R.java
  androidx.legacy.coreutils.R$string
  androidx.legacy.coreutils.R$style
  androidx.legacy.coreutils.R$styleable
+com/heanoria/library/reactnative/locationenabler/R.java
+ com.heanoria.library.reactnative.locationenabler.R
+ com.heanoria.library.reactnative.locationenabler.R$anim
+ com.heanoria.library.reactnative.locationenabler.R$attr
+ com.heanoria.library.reactnative.locationenabler.R$bool
+ com.heanoria.library.reactnative.locationenabler.R$color
+ com.heanoria.library.reactnative.locationenabler.R$dimen
+ com.heanoria.library.reactnative.locationenabler.R$drawable
+ com.heanoria.library.reactnative.locationenabler.R$id
+ com.heanoria.library.reactnative.locationenabler.R$integer
+ com.heanoria.library.reactnative.locationenabler.R$layout
+ com.heanoria.library.reactnative.locationenabler.R$string
+ com.heanoria.library.reactnative.locationenabler.R$style
+ com.heanoria.library.reactnative.locationenabler.R$styleable
+ com.heanoria.library.reactnative.locationenabler.R$xml
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList
 com/facebook/drawee/R.java
@@ -607,21 +622,6 @@ com/rnfs/R.java
  com.rnfs.R$style
  com.rnfs.R$styleable
  com.rnfs.R$xml
-com/reactnativelocationenabler/R.java
- com.reactnativelocationenabler.R
- com.reactnativelocationenabler.R$anim
- com.reactnativelocationenabler.R$attr
- com.reactnativelocationenabler.R$bool
- com.reactnativelocationenabler.R$color
- com.reactnativelocationenabler.R$dimen
- com.reactnativelocationenabler.R$drawable
- com.reactnativelocationenabler.R$id
- com.reactnativelocationenabler.R$integer
- com.reactnativelocationenabler.R$layout
- com.reactnativelocationenabler.R$string
- com.reactnativelocationenabler.R$style
- com.reactnativelocationenabler.R$styleable
- com.reactnativelocationenabler.R$xml
 com/reactcommunity/rndatetimepicker/R.java
  com.reactcommunity.rndatetimepicker.R
  com.reactcommunity.rndatetimepicker.R$anim
