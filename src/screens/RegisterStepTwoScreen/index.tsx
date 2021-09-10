@@ -9,7 +9,7 @@ import {
 import { Input, Item, Icon, Form } from 'native-base'
 import MainContainer from '../../components/MainContainer'
 import styles from './styles'
-import globalStyles from '../../theme'
+import globalStyles, { colors } from '../../theme'
 import { useTranslation } from 'react-i18next'
 import Modal from 'react-native-modal'
 import MapView, { Marker, Region } from 'react-native-maps'
@@ -146,10 +146,6 @@ const RegisterStepTwoScreen = ({ route }: any) => {
     else requestResolution()
   }, [enabled, modalMapOnShow, requestResolution])
 
-  LocationEnabler.addListener(({ locationEnabled }) => {
-    if (locationEnabled) onMapButtonTap()
-  })
-
   return (
     <>
       <MainContainer title={t('add_your_address')}>
@@ -223,7 +219,7 @@ const RegisterStepTwoScreen = ({ route }: any) => {
             regular
             style={[
               globalStyles.inputContainer,
-              globalStyles.secondaryBorder,
+              globalStyles[enabled ? 'secondaryBorder' : 'grayBorder'],
               styles.locateInMapContainer,
             ]}
             onPress={onMapButtonTap}
@@ -276,6 +272,12 @@ const RegisterStepTwoScreen = ({ route }: any) => {
                         initialRegion={tmpLocation}
                       >
                         <Marker coordinate={tmpLocation} />
+                        {!!location?.latitude && (
+                          <Marker
+                            coordinate={location}
+                            pinColor={colors.support()}
+                          />
+                        )}
                       </MapView>
                     )
                 })()}

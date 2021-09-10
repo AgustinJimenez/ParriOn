@@ -88,6 +88,7 @@ export const globalStyles = StyleSheet.create({
     flexDirection: 'row',
   },
   secondaryBorder: { borderColor: colors.support() },
+  grayBorder: { borderColor: 'gray' },
   scrollContainer: {
     // flexGrow: 1,
   },
