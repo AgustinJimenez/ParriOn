@@ -149,11 +149,9 @@ const RegisterStepTwoScreen = ({ route }: any) => {
         }
 
         break
-      case 'ios':
-        setMapLocationVisibility(true)
-        break
 
       default:
+        setMapLocationVisibility(true)
         break
     }
   }, [enabled, modalMapOnShow])

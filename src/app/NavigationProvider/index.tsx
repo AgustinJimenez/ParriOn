@@ -90,6 +90,9 @@ const NavigationProvider = () => {
 
   return (
     <Tab.Navigator
+      sceneContainerStyle={{
+        backgroundColor: 'transparent',
+      }}
       tabBar={(props: BottomTabBarProps<BottomTabBarOptions>) => (
         <TabNav {...props} />
       )}

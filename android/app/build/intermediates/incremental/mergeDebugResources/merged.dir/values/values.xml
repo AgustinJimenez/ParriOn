@@ -695,9 +695,9 @@
     <string name="catalyst_debug_chrome_stop" project="catalyst" translatable="false">Stop Chrome Debugging</string>
     <string name="catalyst_debug_connecting" project="catalyst" translatable="false">Connecting to debugger...</string>
     <string name="catalyst_debug_error" project="catalyst" translatable="false">Failed to connect to debugger!</string>
-    <string name="catalyst_debug_nuclide" project="catalyst" translatable="false">Debug with Nuclide</string>
-    <string name="catalyst_debug_nuclide_error" project="catalyst" translatable="false">Failed to communicate with the bundler to enabling debugging with Nuclide.</string>
+    <string name="catalyst_debug_open" project="catalyst" translatable="false">Open Debugger</string>
     <string name="catalyst_debug_stop" project="catalyst" translatable="false">Stop Debugging</string>
+    <string name="catalyst_devtools_open" project="catalyst" translatable="false">Open React DevTools</string>
     <string name="catalyst_dismiss_button" project="catalyst" translatable="false">Dismiss\n(ESC)</string>
     <string name="catalyst_heap_capture" project="catalyst" translatable="false">Capture Heap</string>
     <string name="catalyst_hot_reloading" project="catalyst" translatable="false">Enable Fast Refresh</string>
@@ -706,6 +706,7 @@
     <string name="catalyst_hot_reloading_stop" project="catalyst" translatable="false">Disable Fast Refresh</string>
     <string name="catalyst_inspector" project="catalyst" translatable="false">Toggle Inspector</string>
     <string name="catalyst_loading_from_url" project="catalyst" translatable="false">Loading from %1$s…</string>
+    <string name="catalyst_open_flipper_error" project="catalyst" translatable="false">Failed to open Flipper. Please check that Metro is running.</string>
     <string name="catalyst_perf_monitor" project="catalyst" translatable="false">Show Perf Monitor</string>
     <string name="catalyst_perf_monitor_stop" project="catalyst" translatable="false">Hide Perf Monitor</string>
     <string name="catalyst_reload" project="catalyst" translatable="false">Reload</string>
@@ -805,6 +806,7 @@
     <string name="state_mixed_description" translatable="false">mixed</string>
     <string name="state_off_description" translatable="false">off</string>
     <string name="state_on_description" translatable="false">on</string>
+    <string name="state_unselected_description" translatable="false">unselected</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="summary_description" translatable="false">Summary</string>
     <string name="tablist_description" translatable="false">Tab List</string>
@@ -2677,12 +2679,6 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
-    </style>
-    <style name="ClockTimePickerDialog" ns2:targetApi="lollipop" parent="Theme.AppCompat.Light.Dialog">
-      <item name="android:timePickerStyle">@style/ClockTimePickerStyle</item>
-    </style>
-    <style name="ClockTimePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.TimePicker">
-      <item name="android:timePickerMode">clock</item>
     </style>
     <style name="Dialog.Theme" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">#f0ad4e</item>
@@ -6115,7 +6111,7 @@
     <!-- Rounding border width-->
     <attr format="dimension" name="roundingBorderWidth"/>
     <!-- Rounding border color -->
-    <attr format="color" name="roundingBorderColor"/>
+    <attr format="color|reference" name="roundingBorderColor"/>
     <!-- Rounding border padding -->
     <attr format="dimension" name="roundingBorderPadding"/>
 

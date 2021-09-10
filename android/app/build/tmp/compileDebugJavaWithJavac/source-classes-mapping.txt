@@ -20,6 +20,28 @@ com/google/android/gms/phenotype/R.java
  com.google.android.gms.phenotype.R
 com/facebook/imagepipelinebase/R.java
  com.facebook.imagepipelinebase.R
+ com.facebook.imagepipelinebase.R$attr
+ com.facebook.imagepipelinebase.R$color
+ com.facebook.imagepipelinebase.R$dimen
+ com.facebook.imagepipelinebase.R$drawable
+ com.facebook.imagepipelinebase.R$id
+ com.facebook.imagepipelinebase.R$integer
+ com.facebook.imagepipelinebase.R$layout
+ com.facebook.imagepipelinebase.R$string
+ com.facebook.imagepipelinebase.R$style
+ com.facebook.imagepipelinebase.R$styleable
+com/facebook/fresco/memorytypes/ashmem/R.java
+ com.facebook.fresco.memorytypes.ashmem.R
+ com.facebook.fresco.memorytypes.ashmem.R$attr
+ com.facebook.fresco.memorytypes.ashmem.R$color
+ com.facebook.fresco.memorytypes.ashmem.R$dimen
+ com.facebook.fresco.memorytypes.ashmem.R$drawable
+ com.facebook.fresco.memorytypes.ashmem.R$id
+ com.facebook.fresco.memorytypes.ashmem.R$integer
+ com.facebook.fresco.memorytypes.ashmem.R$layout
+ com.facebook.fresco.memorytypes.ashmem.R$string
+ com.facebook.fresco.memorytypes.ashmem.R$style
+ com.facebook.fresco.memorytypes.ashmem.R$styleable
 androidx/vectordrawable/R.java
  androidx.vectordrawable.R
  androidx.vectordrawable.R$attr
@@ -36,6 +58,16 @@ androidx/lifecycle/livedata/core/R.java
  androidx.lifecycle.livedata.core.R
 com/facebook/imagepipeline/R.java
  com.facebook.imagepipeline.R
+ com.facebook.imagepipeline.R$attr
+ com.facebook.imagepipeline.R$color
+ com.facebook.imagepipeline.R$dimen
+ com.facebook.imagepipeline.R$drawable
+ com.facebook.imagepipeline.R$id
+ com.facebook.imagepipeline.R$integer
+ com.facebook.imagepipeline.R$layout
+ com.facebook.imagepipeline.R$string
+ com.facebook.imagepipeline.R$style
+ com.facebook.imagepipeline.R$styleable
 androidx/appcompat/resources/R.java
  androidx.appcompat.resources.R
  androidx.appcompat.resources.R$attr
@@ -66,7 +98,14 @@ com/reactnativecommunity/picker/R.java
 com/facebook/drawee/backends/pipeline/R.java
  com.facebook.drawee.backends.pipeline.R
  com.facebook.drawee.backends.pipeline.R$attr
+ com.facebook.drawee.backends.pipeline.R$color
+ com.facebook.drawee.backends.pipeline.R$dimen
+ com.facebook.drawee.backends.pipeline.R$drawable
  com.facebook.drawee.backends.pipeline.R$id
+ com.facebook.drawee.backends.pipeline.R$integer
+ com.facebook.drawee.backends.pipeline.R$layout
+ com.facebook.drawee.backends.pipeline.R$string
+ com.facebook.drawee.backends.pipeline.R$style
  com.facebook.drawee.backends.pipeline.R$styleable
 com/th3rdwave/safeareacontext/R.java
  com.th3rdwave.safeareacontext.R
@@ -100,6 +139,10 @@ androidx/fragment/R.java
  androidx.fragment.R$styleable
 androidx/savedstate/R.java
  androidx.savedstate.R
+com/facebook/fresco/common/middleware/R.java
+ com.facebook.fresco.common.middleware.R
+com/facebook/fresco/soloader/R.java
+ com.facebook.fresco.soloader.R
 com/facebook/react/R.java
  com.facebook.react.R
  com.facebook.react.R$anim
@@ -117,6 +160,16 @@ com/facebook/react/R.java
  com.facebook.react.R$xml
 com/facebook/nativefilters/R.java
  com.facebook.nativefilters.R
+ com.facebook.nativefilters.R$attr
+ com.facebook.nativefilters.R$color
+ com.facebook.nativefilters.R$dimen
+ com.facebook.nativefilters.R$drawable
+ com.facebook.nativefilters.R$id
+ com.facebook.nativefilters.R$integer
+ com.facebook.nativefilters.R$layout
+ com.facebook.nativefilters.R$string
+ com.facebook.nativefilters.R$style
+ com.facebook.nativefilters.R$styleable
 com/google/android/gms/places_placereport/R.java
  com.google.android.gms.places_placereport.R
 org/reactnative/maskedview/R.java
@@ -267,6 +320,18 @@ org/umhan35/R.java
  org.umhan35.R$style
  org.umhan35.R$styleable
  org.umhan35.R$xml
+com/facebook/fresco/memorytypes/simple/R.java
+ com.facebook.fresco.memorytypes.simple.R
+ com.facebook.fresco.memorytypes.simple.R$attr
+ com.facebook.fresco.memorytypes.simple.R$color
+ com.facebook.fresco.memorytypes.simple.R$dimen
+ com.facebook.fresco.memorytypes.simple.R$drawable
+ com.facebook.fresco.memorytypes.simple.R$id
+ com.facebook.fresco.memorytypes.simple.R$integer
+ com.facebook.fresco.memorytypes.simple.R$layout
+ com.facebook.fresco.memorytypes.simple.R$string
+ com.facebook.fresco.memorytypes.simple.R$style
+ com.facebook.fresco.memorytypes.simple.R$styleable
 com/google/android/gms/flags/R.java
  com.google.android.gms.flags.R
 androidx/drawerlayout/R.java
@@ -289,6 +354,16 @@ androidx/multidex/R.java
  androidx.multidex.R
 com/facebook/imagepipeline/backends/okhttp3/R.java
  com.facebook.imagepipeline.backends.okhttp3.R
+ com.facebook.imagepipeline.backends.okhttp3.R$attr
+ com.facebook.imagepipeline.backends.okhttp3.R$color
+ com.facebook.imagepipeline.backends.okhttp3.R$dimen
+ com.facebook.imagepipeline.backends.okhttp3.R$drawable
+ com.facebook.imagepipeline.backends.okhttp3.R$id
+ com.facebook.imagepipeline.backends.okhttp3.R$integer
+ com.facebook.imagepipeline.backends.okhttp3.R$layout
+ com.facebook.imagepipeline.backends.okhttp3.R$string
+ com.facebook.imagepipeline.backends.okhttp3.R$style
+ com.facebook.imagepipeline.backends.okhttp3.R$styleable
 androidx/media/R.java
  androidx.media.R
  androidx.media.R$attr
@@ -338,6 +413,18 @@ com/swmansion/rnscreens/R.java
  com.swmansion.rnscreens.R$style
  com.swmansion.rnscreens.R$styleable
  com.swmansion.rnscreens.R$xml
+com/facebook/fresco/memorytypes/nativememory/R.java
+ com.facebook.fresco.memorytypes.nativememory.R
+ com.facebook.fresco.memorytypes.nativememory.R$attr
+ com.facebook.fresco.memorytypes.nativememory.R$color
+ com.facebook.fresco.memorytypes.nativememory.R$dimen
+ com.facebook.fresco.memorytypes.nativememory.R$drawable
+ com.facebook.fresco.memorytypes.nativememory.R$id
+ com.facebook.fresco.memorytypes.nativememory.R$integer
+ com.facebook.fresco.memorytypes.nativememory.R$layout
+ com.facebook.fresco.memorytypes.nativememory.R$string
+ com.facebook.fresco.memorytypes.nativememory.R$style
+ com.facebook.fresco.memorytypes.nativememory.R$styleable
 com/reactnativecommunity/geolocation/R.java
  com.reactnativecommunity.geolocation.R
  com.reactnativecommunity.geolocation.R$anim
@@ -377,6 +464,18 @@ androidx/cardview/R.java
  androidx.cardview.R$dimen
  androidx.cardview.R$style
  androidx.cardview.R$styleable
+com/facebook/imagepipeline/nativecode/R.java
+ com.facebook.imagepipeline.nativecode.R
+ com.facebook.imagepipeline.nativecode.R$attr
+ com.facebook.imagepipeline.nativecode.R$color
+ com.facebook.imagepipeline.nativecode.R$dimen
+ com.facebook.imagepipeline.nativecode.R$drawable
+ com.facebook.imagepipeline.nativecode.R$id
+ com.facebook.imagepipeline.nativecode.R$integer
+ com.facebook.imagepipeline.nativecode.R$layout
+ com.facebook.imagepipeline.nativecode.R$string
+ com.facebook.imagepipeline.nativecode.R$style
+ com.facebook.imagepipeline.nativecode.R$styleable
 androidx/coordinatorlayout/R.java
  androidx.coordinatorlayout.R
  androidx.coordinatorlayout.R$attr
@@ -600,12 +699,21 @@ com/heanoria/library/reactnative/locationenabler/R.java
  com.heanoria.library.reactnative.locationenabler.R$style
  com.heanoria.library.reactnative.locationenabler.R$styleable
  com.heanoria.library.reactnative.locationenabler.R$xml
+com/facebook/fresco/ui/common/R.java
+ com.facebook.fresco.ui.common.R
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList
 com/facebook/drawee/R.java
  com.facebook.drawee.R
  com.facebook.drawee.R$attr
+ com.facebook.drawee.R$color
+ com.facebook.drawee.R$dimen
+ com.facebook.drawee.R$drawable
  com.facebook.drawee.R$id
+ com.facebook.drawee.R$integer
+ com.facebook.drawee.R$layout
+ com.facebook.drawee.R$string
+ com.facebook.drawee.R$style
  com.facebook.drawee.R$styleable
 com/rnfs/R.java
  com.rnfs.R
@@ -651,6 +759,16 @@ androidx/slidingpanelayout/R.java
  androidx.slidingpanelayout.R$styleable
 com/facebook/nativeimagetranscoder/R.java
  com.facebook.nativeimagetranscoder.R
+ com.facebook.nativeimagetranscoder.R$attr
+ com.facebook.nativeimagetranscoder.R$color
+ com.facebook.nativeimagetranscoder.R$dimen
+ com.facebook.nativeimagetranscoder.R$drawable
+ com.facebook.nativeimagetranscoder.R$id
+ com.facebook.nativeimagetranscoder.R$integer
+ com.facebook.nativeimagetranscoder.R$layout
+ com.facebook.nativeimagetranscoder.R$string
+ com.facebook.nativeimagetranscoder.R$style
+ com.facebook.nativeimagetranscoder.R$styleable
 androidx/viewpager/R.java
  androidx.viewpager.R
  androidx.viewpager.R$attr

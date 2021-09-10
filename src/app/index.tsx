@@ -18,6 +18,8 @@ import Geolocation from '@react-native-community/geolocation'
 import StyleProvider from './StyleProvider'
 import dayjs from 'dayjs'
 import 'dayjs/locale/es'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+
 dayjs.locale('es')
 
 console.disableYellowBox = true
@@ -64,25 +66,27 @@ const App = () => {
   if (!isReady) return <LoadingScreen />
 
   return (
-    <ReduxProvider store={store}>
-      <NavigationContainer
-        ref={navigationRef}
-        initialState={initialState}
-        onStateChange={(state) =>
-          AsyncStorage.setItem('navigation', JSON.stringify(state))
-        }
-      >
-        <PersistGate loading={<LoadingScreen />} persistor={persistor}>
-          <StyleProvider>
-            <Root>
-              <StatusBar barStyle="light-content" />
-              <NavigationProvider />
-              <NetStatusChecker />
-            </Root>
-          </StyleProvider>
-        </PersistGate>
-      </NavigationContainer>
-    </ReduxProvider>
+    <SafeAreaProvider style={{ flex: 1, backgroundColor: 'black' }}>
+      <ReduxProvider store={store}>
+        <NavigationContainer
+          ref={navigationRef}
+          initialState={initialState}
+          onStateChange={(state) =>
+            AsyncStorage.setItem('navigation', JSON.stringify(state))
+          }
+        >
+          <PersistGate loading={<LoadingScreen />} persistor={persistor}>
+            <StyleProvider>
+              <Root>
+                <StatusBar barStyle="light-content" />
+                <NavigationProvider />
+                <NetStatusChecker />
+              </Root>
+            </StyleProvider>
+          </PersistGate>
+        </NavigationContainer>
+      </ReduxProvider>
+    </SafeAreaProvider>
   )
 }
 

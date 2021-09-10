@@ -17,7 +17,7 @@ INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/androi
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
 MERGED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml:2:1-60:12
-MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/eb023126ff9465ea1ec4378821f4688c/transformed/hermes-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4526a140dc4628a75f8a6657ade0dca7/transformed/hermes-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-community_async-storage] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-community_geolocation] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -36,7 +36,7 @@ MERGED from [:react-native-screens] /Users/agustinjimenezcabanias/repositories/p
 MERGED from [:react-native-search-bar] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-search-bar/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-5:12
 MERGED from [:react-native-svg] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.65.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/015e8ad9c0adb7d8565fb70dfc6893fd/transformed/jetified-react-native-0.65.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f022685e28863d119bcf0638943949e/transformed/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e8a231c1209e59be117f9b85fa19166b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -52,14 +52,21 @@ MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agust
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3e5fd334f42e24414af1fd7ea40d76b1/transformed/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4728fc62f5f9566fc355ac6fab0632d0/transformed/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-image-resizer] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-resizer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8367d3273d16951342d42142cf19aced/transformed/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1f6779c9ede0bd27abb6a92b6478275e/transformed/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f226d81067ff9f9dbff97376825b9636/transformed/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8def76295f798252d7e00af406e3b9e3/transformed/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4b31d7271ae7cbcfa11039e85d124100/transformed/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/39671204805580e0ba2ccbf60c384be8/transformed/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/11e48666792bb0f07bf4cd6a50c87fb8/transformed/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fresco:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/91ead07ed5d2ebd4ae2f1ee1e99106f0/transformed/fresco-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d341e717a32c73f304d8c049cb65f70b/transformed/imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/a5f2c5960ec651ace2bfc6ca81ee6b00/transformed/drawee-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/91ab75f5d1e794a0e0f8eb4d9490bb80/transformed/nativeimagefilters-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6e5befb667e78161ef090e0f7f4bde6b/transformed/memory-type-native-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/89f37c51b271fd7b6d4887d9c04292ee/transformed/memory-type-java-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/da006d5c97546535d37ff15a8df4d111/transformed/imagepipeline-native-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3397b8fedae7c6004fed6afef3d7ab7b/transformed/memory-type-ashmem-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c0df9e192f18788d6749a8b0abefeaa7/transformed/imagepipeline-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f9dd2b352428971e3329fa04112f6b5f/transformed/nativeimagetranscoder-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/32c62b7041898c6eedd77df0e464e912/transformed/imagepipeline-base-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:middleware:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f08b7be17abf86f384b641561df92145/transformed/middleware-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/2dd7635147bebb81b7ae5c3553ba9ab9/transformed/ui-common-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d4295be3ff176215e716b33c285f69ac/transformed/soloader-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b3e05cd36d20e64d675614b0c5f17803/transformed/soloader-0.10.1/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ae70438ffce1c45c477b5bca46d7348f/transformed/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3dea943cb4ce7b454021db1621a48580/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/12414dee4acfe9e0c8d119e431e0473e/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -97,8 +104,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/agustinjimenezc
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6c132967cff664c364ce4dfb233d71d8/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/95050ef01d6b438008c62465eb38bf39/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f43e4f06839cfaad866dc27b1b32186/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3d835998aab5c3dc83ba0e259c2222f4/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -171,8 +177,8 @@ MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabani
 MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
 MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.65.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/015e8ad9c0adb7d8565fb70dfc6893fd/transformed/jetified-react-native-0.65.1/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.react:react-native:0.65.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/015e8ad9c0adb7d8565fb70dfc6893fd/transformed/jetified-react-native-0.65.1/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/9f6c5bd79b5c9bc23241347fc511ea94/transformed/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
@@ -189,8 +195,8 @@ MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agust
 MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ddd2fc49cd9b358f623ff8f93d12b45b/transformed/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3e5fd334f42e24414af1fd7ea40d76b1/transformed/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3e5fd334f42e24414af1fd7ea40d76b1/transformed/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b3e05cd36d20e64d675614b0c5f17803/transformed/soloader-0.10.1/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b3e05cd36d20e64d675614b0c5f17803/transformed/soloader-0.10.1/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6a755d3ace5b88b3b7916f7391fa5ce5/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6a755d3ace5b88b3b7916f7391fa5ce5/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1d53f7ca43767e994c08e7e0c3375658/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
@@ -203,8 +209,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agus
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b0d17be3dd2255dc73a0ffc555937fa1/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/21ae714a7526345281a7ac9fa2c9396e/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:label
@@ -323,8 +327,8 @@ uses-sdk
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/main/AndroidManifest.xml
-MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/eb023126ff9465ea1ec4378821f4688c/transformed/hermes-debug/AndroidManifest.xml:5:5-44
-MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/eb023126ff9465ea1ec4378821f4688c/transformed/hermes-debug/AndroidManifest.xml:5:5-44
+MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4526a140dc4628a75f8a6657ade0dca7/transformed/hermes-debug/AndroidManifest.xml:5:5-44
+MERGED from [hermes-debug.aar] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4526a140dc4628a75f8a6657ade0dca7/transformed/hermes-debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-community_async-storage] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_async-storage] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_datetimepicker] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -359,8 +363,8 @@ MERGED from [:react-native-svg] /Users/agustinjimenezcabanias/repositories/perso
 MERGED from [:react-native-svg] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/e3206e20fdda3e081153c3c5c6064b9a/transformed/jetified-react-native-0.63.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.65.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/015e8ad9c0adb7d8565fb70dfc6893fd/transformed/jetified-react-native-0.65.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.65.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/015e8ad9c0adb7d8565fb70dfc6893fd/transformed/jetified-react-native-0.65.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/00e84ce2427be8e942d05c0150e65e38/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/5f022685e28863d119bcf0638943949e/transformed/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -391,22 +395,36 @@ MERGED from [androidx.multidex:multidex:2.0.0] /Users/agustinjimenezcabanias/.gr
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4728fc62f5f9566fc355ac6fab0632d0/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-image-resizer] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-resizer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-resizer] /Users/agustinjimenezcabanias/repositories/personal/ParriOn/node_modules/react-native-image-resizer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8367d3273d16951342d42142cf19aced/transformed/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8367d3273d16951342d42142cf19aced/transformed/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1f6779c9ede0bd27abb6a92b6478275e/transformed/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/1f6779c9ede0bd27abb6a92b6478275e/transformed/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f226d81067ff9f9dbff97376825b9636/transformed/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f226d81067ff9f9dbff97376825b9636/transformed/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8def76295f798252d7e00af406e3b9e3/transformed/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/8def76295f798252d7e00af406e3b9e3/transformed/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4b31d7271ae7cbcfa11039e85d124100/transformed/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/4b31d7271ae7cbcfa11039e85d124100/transformed/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/39671204805580e0ba2ccbf60c384be8/transformed/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/39671204805580e0ba2ccbf60c384be8/transformed/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/11e48666792bb0f07bf4cd6a50c87fb8/transformed/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/11e48666792bb0f07bf4cd6a50c87fb8/transformed/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f2473467b6d78c72575066038c43ec0/transformed/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/91ead07ed5d2ebd4ae2f1ee1e99106f0/transformed/fresco-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/91ead07ed5d2ebd4ae2f1ee1e99106f0/transformed/fresco-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d341e717a32c73f304d8c049cb65f70b/transformed/imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d341e717a32c73f304d8c049cb65f70b/transformed/imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/a5f2c5960ec651ace2bfc6ca81ee6b00/transformed/drawee-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/a5f2c5960ec651ace2bfc6ca81ee6b00/transformed/drawee-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/91ab75f5d1e794a0e0f8eb4d9490bb80/transformed/nativeimagefilters-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/91ab75f5d1e794a0e0f8eb4d9490bb80/transformed/nativeimagefilters-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6e5befb667e78161ef090e0f7f4bde6b/transformed/memory-type-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/6e5befb667e78161ef090e0f7f4bde6b/transformed/memory-type-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/89f37c51b271fd7b6d4887d9c04292ee/transformed/memory-type-java-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/89f37c51b271fd7b6d4887d9c04292ee/transformed/memory-type-java-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/da006d5c97546535d37ff15a8df4d111/transformed/imagepipeline-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/da006d5c97546535d37ff15a8df4d111/transformed/imagepipeline-native-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3397b8fedae7c6004fed6afef3d7ab7b/transformed/memory-type-ashmem-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3397b8fedae7c6004fed6afef3d7ab7b/transformed/memory-type-ashmem-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c0df9e192f18788d6749a8b0abefeaa7/transformed/imagepipeline-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/c0df9e192f18788d6749a8b0abefeaa7/transformed/imagepipeline-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f9dd2b352428971e3329fa04112f6b5f/transformed/nativeimagetranscoder-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f9dd2b352428971e3329fa04112f6b5f/transformed/nativeimagetranscoder-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/32c62b7041898c6eedd77df0e464e912/transformed/imagepipeline-base-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/32c62b7041898c6eedd77df0e464e912/transformed/imagepipeline-base-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f08b7be17abf86f384b641561df92145/transformed/middleware-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/f08b7be17abf86f384b641561df92145/transformed/middleware-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/2dd7635147bebb81b7ae5c3553ba9ab9/transformed/ui-common-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/2dd7635147bebb81b7ae5c3553ba9ab9/transformed/ui-common-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d4295be3ff176215e716b33c285f69ac/transformed/soloader-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/d4295be3ff176215e716b33c285f69ac/transformed/soloader-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b3e05cd36d20e64d675614b0c5f17803/transformed/soloader-0.10.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/b3e05cd36d20e64d675614b0c5f17803/transformed/soloader-0.10.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ae70438ffce1c45c477b5bca46d7348f/transformed/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/ae70438ffce1c45c477b5bca46d7348f/transformed/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3dea943cb4ce7b454021db1621a48580/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -481,10 +499,8 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/agustinjimenezcabania
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/95050ef01d6b438008c62465eb38bf39/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/adc8024f4871133e12c4aa7019f7b1d6/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f43e4f06839cfaad866dc27b1b32186/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3f43e4f06839cfaad866dc27b1b32186/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/daf8bafefbdeaebd18d4008c421cce54/transformed/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3d835998aab5c3dc83ba0e259c2222f4/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.5.0] /Users/agustinjimenezcabanias/.gradle/caches/transforms-3/3d835998aab5c3dc83ba0e259c2222f4/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/agustinjimenezcabanias/repositories/personal/ParriOn/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion

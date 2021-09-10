@@ -134,29 +134,29 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int common_google_play_services_enable_button = 0x7f0f0042;
-        public static final int common_google_play_services_enable_text = 0x7f0f0043;
-        public static final int common_google_play_services_enable_title = 0x7f0f0044;
-        public static final int common_google_play_services_install_button = 0x7f0f0045;
-        public static final int common_google_play_services_install_title = 0x7f0f0047;
-        public static final int common_google_play_services_notification_ticker = 0x7f0f0049;
-        public static final int common_google_play_services_unknown_issue = 0x7f0f004a;
-        public static final int common_google_play_services_unsupported_text = 0x7f0f004b;
-        public static final int common_google_play_services_update_button = 0x7f0f004c;
-        public static final int common_google_play_services_update_text = 0x7f0f004d;
-        public static final int common_google_play_services_update_title = 0x7f0f004e;
-        public static final int common_google_play_services_updating_text = 0x7f0f004f;
-        public static final int common_google_play_services_wear_update_text = 0x7f0f0050;
-        public static final int common_open_on_phone = 0x7f0f0051;
-        public static final int common_signin_button_text = 0x7f0f0052;
-        public static final int common_signin_button_text_long = 0x7f0f0053;
+        public static final int common_google_play_services_enable_button = 0x7f0f0043;
+        public static final int common_google_play_services_enable_text = 0x7f0f0044;
+        public static final int common_google_play_services_enable_title = 0x7f0f0045;
+        public static final int common_google_play_services_install_button = 0x7f0f0046;
+        public static final int common_google_play_services_install_title = 0x7f0f0048;
+        public static final int common_google_play_services_notification_ticker = 0x7f0f004a;
+        public static final int common_google_play_services_unknown_issue = 0x7f0f004b;
+        public static final int common_google_play_services_unsupported_text = 0x7f0f004c;
+        public static final int common_google_play_services_update_button = 0x7f0f004d;
+        public static final int common_google_play_services_update_text = 0x7f0f004e;
+        public static final int common_google_play_services_update_title = 0x7f0f004f;
+        public static final int common_google_play_services_updating_text = 0x7f0f0050;
+        public static final int common_google_play_services_wear_update_text = 0x7f0f0051;
+        public static final int common_open_on_phone = 0x7f0f0052;
+        public static final int common_signin_button_text = 0x7f0f0053;
+        public static final int common_signin_button_text_long = 0x7f0f0054;
     }
     public static final class style {
         private style() {}
 
-        public static final int amu_Bubble_TextAppearance_Dark = 0x7f1002bb;
-        public static final int amu_Bubble_TextAppearance_Light = 0x7f1002bc;
-        public static final int amu_ClusterIcon_TextAppearance = 0x7f1002bd;
+        public static final int amu_Bubble_TextAppearance_Dark = 0x7f1002b9;
+        public static final int amu_Bubble_TextAppearance_Light = 0x7f1002ba;
+        public static final int amu_ClusterIcon_TextAppearance = 0x7f1002bb;
     }
     public static final class styleable {
         private styleable() {}
