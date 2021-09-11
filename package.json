@@ -19,6 +19,8 @@
     "a:r": "yarn run android:run",
     "android:clean": "cd android && ./gradlew clean && cd ..",
     "a:c": "yarn run android:clean",
+    "ios:clean": "cd ios && xcodebuild clean && cd ..",
+    "i:c": "yarn run ios:clean",
     "android:assemble": "rm -rf android/app/build/outputs/apk/release/*.apk && cd android && ./gradlew assembleRelease && cd ..",
     "a:a": "yarn jetify && yarn run android:assemble",
     "android:bundle": "cd android &&./gradlew bundleRelease && cd ..",
