@@ -52,3 +52,5 @@ Thumbs.db
 android/\.gradle/
 
 android/app/build/
+*.hprof
+ios/Pods/
