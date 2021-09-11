@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 /* Begin PBXBuildFile section */
 		031844D81D7C4ADAB9DE9136 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = DABAEFC13B9B444597C00DCC /* config.png */; };
